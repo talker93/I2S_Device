@@ -380,7 +380,7 @@ void AudioHwInit()
     WriteAllAdcRegs(ADC6140_ASI_CH4, 0b01000000 + 32);
 
     // GPIO1 enable
-    WriteAllAdcRegs(ADC6140_GPIO_CFG0, (11 << 4));
+    WriteAllAdcRegs(ADC6140_GPIO_CFG0, 0b00110000);
 
     // BIAS for mic and adc
     WriteAllAdcRegs(ADC6140_BIAS_CFG, (6 << 4));
@@ -406,7 +406,7 @@ void AudioHwInit()
     WriteAllAdcRegs(ADC6140_ASI_OUT_CH_EN, 0b11110000);
 
     // Set mic bias, adc and pll
-    WriteAllAdcRegs(ADC6140_PWR_CFG, 0b11111100);
+    WriteAllAdcRegs(ADC6140_PWR_CFG, 0b11100000);
 
     /*
      * Setup ADCs
