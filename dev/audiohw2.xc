@@ -175,6 +175,7 @@ uint8_t i2c_reg_read(uint8_t device_addr, uint8_t reg, i2c_regop_res_t &result)
 #define ADC6140_0_I2C_DEVICE_ADDR (0x4D)
 #define ADC6140_1_I2C_DEVICE_ADDR (0x4E)
 
+
 // PCM1865 (4-channel audio ADC) Register Addresses
 // #define PCM1865_RESET               (0x00)
 // #define PCM1865_PGA_VAL_CH1_L       (0x01)
@@ -363,6 +364,7 @@ void AudioHwInit()
 
     // TLV reset
     // ADC awake
+    debug_printf("starting to write code for adc");
     WriteAllAdcRegs(ADC6140_SLEEP_CFG, 0b10010000);
     delay_milliseconds(10);
     WriteAllAdcRegs(ADC6140_SLEEP_CFG, 0b10000001);
