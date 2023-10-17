@@ -136,10 +136,10 @@ uint8_t i2c_reg_read(uint8_t device_addr, uint8_t reg, i2c_regop_res_t &result)
 #define PCA9540B_CTRL_CHAN_NONE (0x00) // Set Control Register to select neither channel
 
 // PCM5122 (2-channel audio DAC) I2C Slave Addresses
-#define PCM5122_0_I2C_DEVICE_ADDR (0x4C)
-#define PCM5122_1_I2C_DEVICE_ADDR (0x4C)
-#define PCM5122_2_I2C_DEVICE_ADDR (0x4C)
-#define PCM5122_3_I2C_DEVICE_ADDR (0x4C)
+#define PCM5122_0_I2C_DEVICE_ADDR (0x4A)
+#define PCM5122_1_I2C_DEVICE_ADDR (0x4A)
+#define PCM5122_2_I2C_DEVICE_ADDR (0x4A)
+#define PCM5122_3_I2C_DEVICE_ADDR (0x4A)
 
 // PCM5122 (2-channel audio DAC) Register Addresses
 #define PCM5122_PAGE 0x00         // Page select
@@ -172,8 +172,8 @@ uint8_t i2c_reg_read(uint8_t device_addr, uint8_t reg, i2c_regop_res_t &result)
 // PCM1865 (4-channel audio ADC) I2C Slave Addresses
 // #define PCM1865_0_I2C_DEVICE_ADDR   (0x4A)
 // #define PCM1865_1_I2C_DEVICE_ADDR   (0x4B)
-#define ADC6140_0_I2C_DEVICE_ADDR (0x4D)
-#define ADC6140_1_I2C_DEVICE_ADDR (0x4E)
+#define ADC6140_0_I2C_DEVICE_ADDR (0x4C)
+#define ADC6140_1_I2C_DEVICE_ADDR (0x4D)
 
 
 // PCM1865 (4-channel audio ADC) Register Addresses
@@ -364,7 +364,6 @@ void AudioHwInit()
 
     // TLV reset
     // ADC awake
-    debug_printf("starting to write code for adc");
     WriteAllAdcRegs(ADC6140_SLEEP_CFG, 0b10010000);
     delay_milliseconds(10);
     WriteAllAdcRegs(ADC6140_SLEEP_CFG, 0b10000001);
