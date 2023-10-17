@@ -451,10 +451,10 @@ void AudioHwInit()
     {
         /* Note, the ADCs do not support TDM with channel slots other than 32bit i.e. 256fs */
         /* Write offset such that ADC's do not drive against eachother */
-        result = i2c_reg_write(PCM1865_0_I2C_DEVICE_ADDR, PCM1865_TX_TDM_OFFSET, 1);
-        assert(result == I2C_REGOP_SUCCESS && msg("ADC I2C write reg failed"));
-        result = i2c_reg_write(PCM1865_1_I2C_DEVICE_ADDR, PCM1865_TX_TDM_OFFSET, 129);
-        assert(result == I2C_REGOP_SUCCESS && msg("ADC I2C write reg failed"));
+        // result = i2c_reg_write(PCM1865_0_I2C_DEVICE_ADDR, PCM1865_TX_TDM_OFFSET, 1);
+        // assert(result == I2C_REGOP_SUCCESS && msg("ADC I2C write reg failed"));
+        // result = i2c_reg_write(PCM1865_1_I2C_DEVICE_ADDR, PCM1865_TX_TDM_OFFSET, 129);
+        // assert(result == I2C_REGOP_SUCCESS && msg("ADC I2C write reg failed"));
 
         if (CODEC_MASTER)
         {
@@ -464,7 +464,7 @@ void AudioHwInit()
              * TX_WLEN:        32-bit
              * FMT:            TDM/DSP
              */
-            WriteAllAdcRegs(PCM1865_FMT, 0b01000011);
+            // WriteAllAdcRegs(PCM1865_FMT, 0b01000011);
         }
         else
         {
@@ -474,12 +474,12 @@ void AudioHwInit()
              * TX_WLEN:        32-bit
              * FMT:            TDM/DSP
              */
-            WriteAllAdcRegs(PCM1865_FMT, 0b01010011);
+            // WriteAllAdcRegs(PCM1865_FMT, 0b01010011);
         }
 
         /* TDM_OSEL:       4ch TDM
          */
-        WriteAllAdcRegs(PCM1865_TDM_OSEL, 0b00000001);
+        // WriteAllAdcRegs(PCM1865_TDM_OSEL, 0b00000001);
     }
 
     /*
