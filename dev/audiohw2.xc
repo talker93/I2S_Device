@@ -136,10 +136,10 @@ uint8_t i2c_reg_read(uint8_t device_addr, uint8_t reg, i2c_regop_res_t &result)
 #define PCA9540B_CTRL_CHAN_NONE (0x00) // Set Control Register to select neither channel
 
 // PCM5122 (2-channel audio DAC) I2C Slave Addresses
-#define PCM5122_0_I2C_DEVICE_ADDR (0x4A)
-#define PCM5122_1_I2C_DEVICE_ADDR (0x4A)
-#define PCM5122_2_I2C_DEVICE_ADDR (0x4A)
-#define PCM5122_3_I2C_DEVICE_ADDR (0x4A)
+#define PCM5122_0_I2C_DEVICE_ADDR (0x44)
+#define PCM5122_1_I2C_DEVICE_ADDR (0x4D)
+#define PCM5122_2_I2C_DEVICE_ADDR (0x4E)
+#define PCM5122_3_I2C_DEVICE_ADDR (0x4F)
 
 // PCM5122 (2-channel audio DAC) Register Addresses
 #define PCM5122_PAGE 0x00         // Page select
