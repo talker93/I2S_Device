@@ -10,7 +10,7 @@ time.sleep(1)
 reg = []
 
 # select page 0
-adc.set(0x00, adc.reg0x00['page0'])
+# adc.set(0x00, adc.reg0x00['page0'])
 
 time.sleep(0.01)
 
