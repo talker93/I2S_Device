@@ -35,6 +35,7 @@ class TLV320ADC6140:
             "page2" : self.b2d("00000010"),
             "page3" : self.b2d("00000011")
         }
+        """
         # reset
         self.reg0x01 = {
             "reset" : self.b2d("00000001")
@@ -221,3 +222,4 @@ class TLV320ADC6140:
             "active&off" : self.b2d("11000000"),
             "active" : self.b2d("11100000")
         }
+        """
