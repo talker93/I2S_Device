@@ -6,7 +6,7 @@ class TLV320ADC6140:
     # init default values
     # bus_num: i2c bus number
     # addr: i2c address, normally 0x4c
-    def __init__(self, bus_num=1, addr=0x4e, standby_pin=4):
+    def __init__(self, bus_num=1, addr=0x4c, standby_pin=4):
         # i2c connection init
         self.bus_num = bus_num
         self.addr = addr
