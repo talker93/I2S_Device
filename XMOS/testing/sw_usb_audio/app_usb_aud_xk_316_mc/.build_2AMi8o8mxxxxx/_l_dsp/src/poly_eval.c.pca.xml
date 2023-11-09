@@ -1,0 +1,12 @@
+<preCompilationAnalysis file="C:/Users/jiang/OneDrive/Lab/Digitizer-v3/testing/lib_dsp/lib_dsp/src/poly_eval.c">
+  <fCall global="true" name="dsp_poly_eval"/>
+  <fCall global="true" name="dsp_poly_eval.nstackwords"/>
+  <fCall global="true" name="dsp_poly_eval_impl_xs2.nstackwords"/>
+  <fCall global="true" name="dsp_poly_eval.maxcores"/>
+  <fCall global="true" name="dsp_poly_eval_impl_xs2.maxcores"/>
+  <fCall global="true" name="dsp_poly_eval.maxtimers"/>
+  <fCall global="true" name="dsp_poly_eval_impl_xs2.maxtimers"/>
+  <fCall global="true" name="dsp_poly_eval.maxchanends"/>
+  <fCall global="true" name="dsp_poly_eval_impl_xs2.maxchanends"/>
+  <fCall global="true" name="dsp_poly_eval_impl_xs2"/>
+</preCompilationAnalysis>

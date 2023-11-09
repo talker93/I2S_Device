@@ -1,0 +1,21 @@
+<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xud/lib_xud/src/core/XUD_IoLoop.S">
+  <fCall global="true" name="UsbTestModeHandler_asm.nstackwords"/>
+  <fCall global="true" name="UsbTestModeHandler_asm"/>
+  <fCall global="true" name="ResetIntHandler.nstackwords"/>
+  <fCall global="true" name="ResetIntHandler"/>
+  <fCall global="true" name="XUD_LLD_IoLoop.nstackwords"/>
+  <fCall global="true" name="XUD_LLD_IoLoop.maxcores"/>
+  <fCall global="true" name="XUD_LLD_IoLoop.maxtimers"/>
+  <fCall global="true" name="XUD_LLD_IoLoop.maxchanends"/>
+  <fCall global="true" name="XUD_LLD_IoLoop"/>
+  <fCall global="true" name="PidJumpTable"/>
+  <fCall global="true" name="PidJumpTable_RxData"/>
+  <fCall global="true" name="XUD_UsbTestModeHandler"/>
+  <fCall global="true" name="SavedSp"/>
+  <fCall global="true" name="epAddr"/>
+  <fCall global="true" name="rx_rdy"/>
+  <fCall global="true" name="g_txHandshakeTimeout"/>
+  <fCall global="true" name="epChans0"/>
+  <fCall global="true" name="chanArray"/>
+  <fCall global="true" name="crc5Table_Addr"/>
+</preCompilationAnalysis>

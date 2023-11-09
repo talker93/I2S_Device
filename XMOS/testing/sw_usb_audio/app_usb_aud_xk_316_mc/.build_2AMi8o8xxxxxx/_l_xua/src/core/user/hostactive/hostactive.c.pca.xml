@@ -1,0 +1,7 @@
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/user/hostactive/hostactive.c">
+  <fCall global="true" name="UserHostActive"/>
+  <fCall global="true" name="UserHostActive.nstackwords"/>
+  <fCall global="true" name="UserHostActive.maxcores"/>
+  <fCall global="true" name="UserHostActive.maxtimers"/>
+  <fCall global="true" name="UserHostActive.maxchanends"/>
+</preCompilationAnalysis>

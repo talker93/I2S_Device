@@ -1,0 +1,11 @@
+<preCompilationAnalysis file="C:/Users/jiang/OneDrive/Lab/Digitizer-v3/testing/lib_xud/lib_xud/src/core/XUD_SetCrcTableAddr.c">
+  <fCall global="true" name="XUD_SetCrcTableAddr"/>
+  <fCall global="true" name="XUD_SetCrcTableAddr.nstackwords"/>
+  <fCall global="true" name="memset.nstackwords"/>
+  <fCall global="true" name="XUD_SetCrcTableAddr.maxcores"/>
+  <fCall global="true" name="XUD_SetCrcTableAddr.maxtimers"/>
+  <fCall global="true" name="XUD_SetCrcTableAddr.maxchanends"/>
+  <fCall global="true" name="crc5Table_Addr"/>
+  <fCall global="true" name="crc5Table"/>
+  <fCall global="true" name="memset"/>
+</preCompilationAnalysis>

@@ -1,0 +1,8 @@
+<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xud/lib_xud/src/core/XUD_TestMode.S">
+  <fCall global="true" name="XUD_UsbTestSE0.nstackwords"/>
+  <fCall global="true" name="XUD_UsbTestSE0"/>
+  <fCall global="true" name="p_usb_rxd"/>
+  <fCall global="true" name="p_usb_txd"/>
+  <fCall global="true" name="flag1_port"/>
+  <fCall global="true" name="crc5Table_Addr"/>
+</preCompilationAnalysis>

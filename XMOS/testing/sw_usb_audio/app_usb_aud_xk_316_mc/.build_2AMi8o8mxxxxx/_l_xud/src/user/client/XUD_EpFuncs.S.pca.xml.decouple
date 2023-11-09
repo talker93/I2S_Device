@@ -1,0 +1,12 @@
+<preCompilationAnalysis file="C:/Users/jiang/OneDrive/Lab/Digitizer-v3/testing/lib_xud/lib_xud/src/user/client/XUD_EpFuncs.S">
+  <fCall global="true" name="XUD_SetTestMode"/>
+  <fCall global="true" name="XUD_SetTestMode.nstackwords"/>
+  <fCall global="true" name="XUD_SetTestMode.maxchanends"/>
+  <fCall global="true" name="XUD_SetTestMode.maxtimers"/>
+  <fCall global="true" name="XUD_SetTestMode.maxcores"/>
+  <fCall global="true" name="XUD_SetTestMode.locnoside"/>
+  <fCall global="true" name="XUD_SetTestMode.locnochandec"/>
+  <fCall global="true" name="XUD_SetTestMode.locnoglobalaccess"/>
+  <fCall global="true" name="XUD_SetTestMode.locnointerfaceaccess"/>
+  <fCall global="true" name="XUD_SetTestMode.locnonotificationselect"/>
+</preCompilationAnalysis>

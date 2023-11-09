@@ -1,0 +1,12 @@
+<preCompilationAnalysis file="C:/Users/jiang/OneDrive/Lab/Digitizer-v3/testing/lib_xud/lib_xud/src/core/XUD_USBTile_Support.S">
+  <fCall global="true" name="XUD_EnableUsbPortMux"/>
+  <fCall global="true" name="XUD_EnableUsbPortMux.nstackwords"/>
+  <fCall global="true" name="XUD_EnableUsbPortMux.maxchanends"/>
+  <fCall global="true" name="XUD_EnableUsbPortMux.maxtimers"/>
+  <fCall global="true" name="XUD_EnableUsbPortMux.maxcores"/>
+  <fCall global="true" name="XUD_DisableUsbPortMux"/>
+  <fCall global="true" name="XUD_DisableUsbPortMux.nstackwords"/>
+  <fCall global="true" name="XUD_DisableUsbPortMux.maxchanends"/>
+  <fCall global="true" name="XUD_DisableUsbPortMux.maxtimers"/>
+  <fCall global="true" name="XUD_DisableUsbPortMux.maxcores"/>
+</preCompilationAnalysis>
