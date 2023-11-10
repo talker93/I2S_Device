@@ -271,81 +271,81 @@ void AudioHwInit()
     delay_milliseconds(1);
     // WriteAllDacRegs(PCM5122_RESET,          0x11); // Reset dac modules and registers to defaults. but this sets standby to 0 so chip starts up ... need to put back in standby.
     // WriteAllDacRegs(PCM5122_STANDBY_PWDN,   0x10); // Request standby mode
-    WriteAllAdcRegs(PCM1865_RESET, 0xFE);
+    // WriteAllAdcRegs(PCM1865_RESET, 0xFE);
 
     /*
      * Setup ADCs
      */
     /* Setup is ADC is I2S slave, MCLK slave, I2S_DOUT2 on GPIO0. ADC sets up clocking automatically based on applied input clocks */
-    WriteAllAdcRegs(PCM1865_ADC2_IP_SEL_L,  0x42); // Set ADC2 Left input to come from VINL2[SE] input.
-    WriteAllAdcRegs(PCM1865_ADC2_IP_SEL_R,  0x42); // Set ADC2 Right input to come from VINR2[SE] input.
-    WriteAllAdcRegs(PCM1865_PGA_VAL_CH1_L,  0xFC);
-    WriteAllAdcRegs(PCM1865_PGA_VAL_CH1_R,  0xFC);
-    WriteAllAdcRegs(PCM1865_PGA_VAL_CH2_L,  0xFC);
-    WriteAllAdcRegs(PCM1865_PGA_VAL_CH2_R,  0xFC);
+    // WriteAllAdcRegs(PCM1865_ADC2_IP_SEL_L,  0x42); // Set ADC2 Left input to come from VINL2[SE] input.
+    // WriteAllAdcRegs(PCM1865_ADC2_IP_SEL_R,  0x42); // Set ADC2 Right input to come from VINR2[SE] input.
+    // WriteAllAdcRegs(PCM1865_PGA_VAL_CH1_L,  0xFC);
+    // WriteAllAdcRegs(PCM1865_PGA_VAL_CH1_R,  0xFC);
+    // WriteAllAdcRegs(PCM1865_PGA_VAL_CH2_L,  0xFC);
+    // WriteAllAdcRegs(PCM1865_PGA_VAL_CH2_R,  0xFC);
 
-    if (XUA_PCM_FORMAT == XUA_PCM_FORMAT_I2S)
-    {
-        /* Convert XUA_I2S_N_BITS to ADC FMT bits */
-        int tx_wlen = 0;
-        switch(XUA_I2S_N_BITS)
-        {
-            case 32:
-                tx_wlen = 0b00;
-                break;
-            case 24:
-                tx_wlen = 0b01;
-                break;
-            case 16:
-                tx_wlen = 0b11;
-                break;
-        }
+    // if (XUA_PCM_FORMAT == XUA_PCM_FORMAT_I2S)
+    // {
+    //     /* Convert XUA_I2S_N_BITS to ADC FMT bits */
+    //     int tx_wlen = 0;
+    //     switch(XUA_I2S_N_BITS)
+    //     {
+    //         case 32:
+    //             tx_wlen = 0b00;
+    //             break;
+    //         case 24:
+    //             tx_wlen = 0b01;
+    //             break;
+    //         case 16:
+    //             tx_wlen = 0b11;
+    //             break;
+    //     }
 
-        /* Only enable DOUT2 in I2S mode. In TDM mode it doesn't really make sense, wastes power (and data sheet states "not available") */
-        WriteAllAdcRegs(PCM1865_GPIO01_FUN,     0x05); // Set GPIO1 as normal polarity, GPIO1 functionality. Set GPIO0 as normal polarity, DOUT2 functionality.
-        WriteAllAdcRegs(PCM1865_GPIO01_DIR,     0x04); // Set GPIO1 as an input. Set GPIO0 as an output (used for I2S DOUT2).
+    //     /* Only enable DOUT2 in I2S mode. In TDM mode it doesn't really make sense, wastes power (and data sheet states "not available") */
+    //     WriteAllAdcRegs(PCM1865_GPIO01_FUN,     0x05); // Set GPIO1 as normal polarity, GPIO1 functionality. Set GPIO0 as normal polarity, DOUT2 functionality.
+    //     WriteAllAdcRegs(PCM1865_GPIO01_DIR,     0x04); // Set GPIO1 as an input. Set GPIO0 as an output (used for I2S DOUT2).
 
-        /* RX_WLEN:        24-bit (default)
-         * TDM_LRCLK_MODE: 0 (default)
-         * TX_WLEN:        XUA_I2S_N_BITS
-         * FMT:            I2S
-         */
-        WriteAllAdcRegs(PCM1865_FMT, 0b01000000 | (tx_wlen << 2));
-    }
-    else
-    {
+    //     /* RX_WLEN:        24-bit (default)
+    //      * TDM_LRCLK_MODE: 0 (default)
+    //      * TX_WLEN:        XUA_I2S_N_BITS
+    //      * FMT:            I2S
+    //      */
+    //     WriteAllAdcRegs(PCM1865_FMT, 0b01000000 | (tx_wlen << 2));
+    // }
+    // else
+    // {
         /* Note, the ADCs do not support TDM with channel slots other than 32bit i.e. 256fs */
         /* Write offset such that ADC's do not drive against eachother */
-        result = i2c_reg_write(PCM1865_0_I2C_DEVICE_ADDR, PCM1865_TX_TDM_OFFSET, 1);
-        assert(result == I2C_REGOP_SUCCESS && msg("ADC I2C write reg failed"));
-        result = i2c_reg_write(PCM1865_1_I2C_DEVICE_ADDR, PCM1865_TX_TDM_OFFSET, 129);
-        assert(result == I2C_REGOP_SUCCESS && msg("ADC I2C write reg failed"));
+        // result = i2c_reg_write(PCM1865_0_I2C_DEVICE_ADDR, PCM1865_TX_TDM_OFFSET, 1);
+        // assert(result == I2C_REGOP_SUCCESS && msg("ADC I2C write reg failed"));
+        // result = i2c_reg_write(PCM1865_1_I2C_DEVICE_ADDR, PCM1865_TX_TDM_OFFSET, 129);
+        // assert(result == I2C_REGOP_SUCCESS && msg("ADC I2C write reg failed"));
 
-        if(CODEC_MASTER)
-        {
+        // if(CODEC_MASTER)
+        // {
             /* PCM5122 drives a 1/2 duty cycle LRCLK for TDM */
             /* RX_WLEN:        24-bit (default)
              * TDM_LRCLK_MODE: duty cycle of LRCLK is 1/2
              * TX_WLEN:        32-bit
              * FMT:            TDM/DSP
              */
-            WriteAllAdcRegs(PCM1865_FMT, 0b01000011);
-        }
-        else
-        {
+        //     WriteAllAdcRegs(PCM1865_FMT, 0b01000011);
+        // }
+        // else
+        // {
             /* xCORE drives 1/256 duty cycle LRCLK for TDM */
             /* RX_WLEN:        24-bit (default)
              * TDM_LRCLK_MODE: duty cycle of LRCLK is 1/256
              * TX_WLEN:        32-bit
              * FMT:            TDM/DSP
              */
-            WriteAllAdcRegs(PCM1865_FMT, 0b01010011);
-        }
+        //     WriteAllAdcRegs(PCM1865_FMT, 0b01010011);
+        // }
 
         /* TDM_OSEL:       4ch TDM
          */
-        WriteAllAdcRegs(PCM1865_TDM_OSEL, 0b00000001);
-    }
+        // WriteAllAdcRegs(PCM1865_TDM_OSEL, 0b00000001);
+    // }
 
     /*
      * Setup DACs
