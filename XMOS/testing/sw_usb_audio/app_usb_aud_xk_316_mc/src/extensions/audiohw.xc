@@ -266,11 +266,11 @@ void AudioHwInit()
     SetI2CMux(PCA9540B_CTRL_CHAN_0);
 
     /* Reset DAC & ADC registers. Just in case we've run another build config */
-    WriteAllDacRegs(PCM5122_PAGE,           0x00); // Set Page 0.
-    WriteAllDacRegs(PCM5122_STANDBY_PWDN,   0x10); // Request standby mode
+    // WriteAllDacRegs(PCM5122_PAGE,           0x00); // Set Page 0.
+    // WriteAllDacRegs(PCM5122_STANDBY_PWDN,   0x10); // Request standby mode
     delay_milliseconds(1);
-    WriteAllDacRegs(PCM5122_RESET,          0x11); // Reset dac modules and registers to defaults. but this sets standby to 0 so chip starts up ... need to put back in standby.
-    WriteAllDacRegs(PCM5122_STANDBY_PWDN,   0x10); // Request standby mode
+    // WriteAllDacRegs(PCM5122_RESET,          0x11); // Reset dac modules and registers to defaults. but this sets standby to 0 so chip starts up ... need to put back in standby.
+    // WriteAllDacRegs(PCM5122_STANDBY_PWDN,   0x10); // Request standby mode
     WriteAllAdcRegs(PCM1865_RESET, 0xFE);
 
     /*
