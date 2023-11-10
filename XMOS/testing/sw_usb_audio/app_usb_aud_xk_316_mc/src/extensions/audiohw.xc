@@ -211,7 +211,7 @@ void WriteRegs(int deviceAddr, int numDevices, int regAddr, int regData)
 
 void SetI2CMux(int ch)
 {
-    // i2c_regop_res_t result;
+    i2c_regop_res_t result;
 
     // I2C mux takes the last byte written as the data for the control register.
     // We can't send only one byte so we send two with the data in the last byte.
@@ -227,7 +227,7 @@ void SetI2CMux(int ch)
 /* Configures the external audio hardware at startup */
 void AudioHwInit()
 {
-    i2c_regop_res_t result;
+    // i2c_regop_res_t result;
 
     // Wait for power supply to come up.
     delay_milliseconds(100);

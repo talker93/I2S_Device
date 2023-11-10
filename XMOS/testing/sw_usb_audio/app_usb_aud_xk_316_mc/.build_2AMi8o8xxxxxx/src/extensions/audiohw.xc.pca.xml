@@ -5,7 +5,6 @@
 <fDef name="PllInit" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>
 <fDef name="PllMult" global="true" noreturn="false" doNotSpecialize="false" numParams="3"/>
 <fDef name="SetI2CMux" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>
-<fDef name="WriteAllAdcRegs" global="true" noreturn="false" doNotSpecialize="false" numParams="2"/>
 <fDef name="WriteRegs" global="true" noreturn="false" doNotSpecialize="false" numParams="4"/>
 <fDef name="XUD_SetReady_In" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
 <fDef name="XUD_SetReady_InPtr" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
@@ -1252,28 +1251,6 @@
   <arg num="2">
     <values>
       <value type="unknown"/>
-    </values>
-  </arg>
-</fCall>
-<fCall name="WriteRegs" global="true" numArgs="4">
-  <arg num="0">
-    <values>
-      <value type="intval"><intval isSigned="true" val="74"/></value>
-    </values>
-  </arg>
-  <arg num="1">
-    <values>
-      <value type="intval"><intval isSigned="true" val="2"/></value>
-    </values>
-  </arg>
-  <arg num="2">
-    <passThroughArg param="0" caller="WriteAllAdcRegs" global="true"/>
-    <values>
-    </values>
-  </arg>
-  <arg num="3">
-    <passThroughArg param="1" caller="WriteAllAdcRegs" global="true"/>
-    <values>
     </values>
   </arg>
 </fCall>
