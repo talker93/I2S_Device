@@ -1961,9 +1961,6 @@
       <value type="intval"><intval isSigned="true" val="27"/></value>
       <value type="intval"><intval isSigned="true" val="28"/></value>
       <value type="intval"><intval isSigned="true" val="29"/></value>
-      <value type="intval"><intval isSigned="true" val="30"/></value>
-      <value type="intval"><intval isSigned="true" val="34"/></value>
-      <value type="intval"><intval isSigned="true" val="35"/></value>
       <value type="intval"><intval isSigned="true" val="36"/></value>
       <value type="intval"><intval isSigned="true" val="37"/></value>
       <value type="intval"><intval isSigned="true" val="40"/></value>
@@ -1977,14 +1974,11 @@
       <value type="intval"><intval isSigned="true" val="1"/></value>
       <value type="intval"><intval isSigned="true" val="2"/></value>
       <value type="intval"><intval isSigned="true" val="3"/></value>
-      <value type="intval"><intval isSigned="true" val="7"/></value>
       <value type="intval"><intval isSigned="true" val="8"/></value>
       <value type="intval"><intval isSigned="true" val="15"/></value>
       <value type="intval"><intval isSigned="true" val="16"/></value>
       <value type="intval"><intval isSigned="true" val="17"/></value>
-      <value type="intval"><intval isSigned="true" val="64"/></value>
       <value type="intval"><intval isSigned="true" val="114"/></value>
-      <value type="intval"><intval isSigned="true" val="128"/></value>
     </values>
   </arg>
 </fInfo>
@@ -2022,9 +2016,6 @@
       <value type="intval"><intval isSigned="true" val="27"/></value>
       <value type="intval"><intval isSigned="true" val="28"/></value>
       <value type="intval"><intval isSigned="true" val="29"/></value>
-      <value type="intval"><intval isSigned="true" val="30"/></value>
-      <value type="intval"><intval isSigned="true" val="34"/></value>
-      <value type="intval"><intval isSigned="true" val="35"/></value>
       <value type="intval"><intval isSigned="true" val="36"/></value>
       <value type="intval"><intval isSigned="true" val="37"/></value>
       <value type="intval"><intval isSigned="true" val="40"/></value>
@@ -2040,17 +2031,14 @@
       <value type="intval"><intval isSigned="true" val="3"/></value>
       <value type="intval"><intval isSigned="true" val="4"/></value>
       <value type="intval"><intval isSigned="true" val="5"/></value>
-      <value type="intval"><intval isSigned="true" val="7"/></value>
       <value type="intval"><intval isSigned="true" val="8"/></value>
       <value type="intval"><intval isSigned="true" val="15"/></value>
       <value type="intval"><intval isSigned="true" val="16"/></value>
       <value type="intval"><intval isSigned="true" val="17"/></value>
-      <value type="intval"><intval isSigned="true" val="64"/></value>
       <value type="intval"><intval isSigned="true" val="66"/></value>
       <value type="intval"><intval isSigned="true" val="67"/></value>
       <value type="intval"><intval isSigned="true" val="83"/></value>
       <value type="intval"><intval isSigned="true" val="114"/></value>
-      <value type="intval"><intval isSigned="true" val="128"/></value>
       <value type="intval"><intval isSigned="true" val="252"/></value>
       <value type="intval"><intval isSigned="true" val="254"/></value>
     </values>
