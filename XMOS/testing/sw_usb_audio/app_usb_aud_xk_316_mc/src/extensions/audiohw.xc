@@ -350,95 +350,95 @@ void AudioHwInit()
     /*
      * Setup DACs
      */
-    if(CODEC_MASTER)
-    {
-        /* When xCORE is I2S slave we set one DAC to master and the rest remain slaves.
-         * We write some values to all DACs just to avoid any difference in performance */
+    // if(CODEC_MASTER)
+    // {
+    //     /* When xCORE is I2S slave we set one DAC to master and the rest remain slaves.
+    //      * We write some values to all DACs just to avoid any difference in performance */
 
-        // Disable Auto Clock Configuration
-        WriteAllDacRegs(PCM5122_CLK_DET, 0x72);
+    //     // Disable Auto Clock Configuration
+    //     WriteAllDacRegs(PCM5122_CLK_DET, 0x72);
 
-        // PLL P divider to 2
-        WriteAllDacRegs(PCM5122_PLL_P, 0x01);
+    //     // PLL P divider to 2
+    //     WriteAllDacRegs(PCM5122_PLL_P, 0x01);
 
-        // PLL J divider to 8
-        WriteAllDacRegs(PCM5122_PLL_J, 0x08);
+    //     // PLL J divider to 8
+    //     WriteAllDacRegs(PCM5122_PLL_J, 0x08);
 
-        // PLL D1 divider to 00
-        WriteAllDacRegs(PCM5122_PLL_D1, 0x00);
+    //     // PLL D1 divider to 00
+    //     WriteAllDacRegs(PCM5122_PLL_D1, 0x00);
 
-        // PLL D2 divider to 00
-        WriteAllDacRegs(PCM5122_PLL_D2, 0x00);
+    //     // PLL D2 divider to 00
+    //     WriteAllDacRegs(PCM5122_PLL_D2, 0x00);
 
-        // PLL R divider to 1
-        WriteAllDacRegs(PCM5122_PLL_R, 0x00);
+    //     // PLL R divider to 1
+    //     WriteAllDacRegs(PCM5122_PLL_R, 0x00);
 
-        // NB: Overall PLL Multiplier is x4.
-        // miniDSP CLK divider (NMAC) to 2
-        WriteAllDacRegs(PCM5122_DDSP, 0x01);
+    //     // NB: Overall PLL Multiplier is x4.
+    //     // miniDSP CLK divider (NMAC) to 2
+    //     WriteAllDacRegs(PCM5122_DDSP, 0x01);
 
-        //DAC CLK divider to 16
-        WriteAllDacRegs(PCM5122_DDAC, 0x0F);
+    //     //DAC CLK divider to 16
+    //     WriteAllDacRegs(PCM5122_DDAC, 0x0F);
 
-        // NCP CLK divider to 4
-        WriteAllDacRegs(PCM5122_DNCP, 0x03);
+    //     // NCP CLK divider to 4
+    //     WriteAllDacRegs(PCM5122_DNCP, 0x03);
 
-        // IDAC2
-        WriteAllDacRegs(PCM5122_IDAC_LS, 0x00);
-    }
-    else
-    {
-        WriteAllDacRegs(PCM5122_CLK_DET,        0x02); // disable clock autoset.
-        WriteAllDacRegs(PCM5122_PLL,            0x00); // disable the internal PLL.
-        WriteAllDacRegs(PCM5122_AUTO_MUTE,      0x00); // disable auto mute.
-        WriteAllDacRegs(PCM5122_DDSP,           0x00); // sets DSP clock divider NMAC to 1.
-        WriteAllDacRegs(PCM5122_DNCP,           0x03); // sets charge pump divider NCP to 4. (same for all modes, this governs charge pump frequency (divided from *DAC* clock)).
-    }
+    //     // IDAC2
+    //     WriteAllDacRegs(PCM5122_IDAC_LS, 0x00);
+    // }
+    // else
+    // {
+    //     WriteAllDacRegs(PCM5122_CLK_DET,        0x02); // disable clock autoset.
+    //     WriteAllDacRegs(PCM5122_PLL,            0x00); // disable the internal PLL.
+    //     WriteAllDacRegs(PCM5122_AUTO_MUTE,      0x00); // disable auto mute.
+    //     WriteAllDacRegs(PCM5122_DDSP,           0x00); // sets DSP clock divider NMAC to 1.
+    //     WriteAllDacRegs(PCM5122_DNCP,           0x03); // sets charge pump divider NCP to 4. (same for all modes, this governs charge pump frequency (divided from *DAC* clock)).
+    // }
 
-    int alen = 0b11;
-    switch(XUA_I2S_N_BITS)
-    {
-        case 16:
-            alen = 0b00;
-            break;
-        case 24:
-            alen = 0b10;
-            break;
-        case 32:
-            alen = 0b11;
-            break;
-    }
+    // int alen = 0b11;
+    // switch(XUA_I2S_N_BITS)
+    // {
+    //     case 16:
+    //         alen = 0b00;
+    //         break;
+    //     case 24:
+    //         alen = 0b10;
+    //         break;
+    //     case 32:
+    //         alen = 0b11;
+    //         break;
+    // }
 
-    if(XUA_PCM_FORMAT == XUA_PCM_FORMAT_I2S)
-    {
-        /* Set Format to I2S with word length XUA_I2S_N_BITS */
-        WriteAllDacRegs(PCM5122_I2S, 0b00000000 | (alen));
-    }
-    else
-    {
+    // if(XUA_PCM_FORMAT == XUA_PCM_FORMAT_I2S)
+    // {
+    //     /* Set Format to I2S with word length XUA_I2S_N_BITS */
+    //     WriteAllDacRegs(PCM5122_I2S, 0b00000000 | (alen));
+    // }
+    // else
+    // {
         /* Note, for TDM to work as expected for all DACs the jumpers on the board marked "DAC I2S/TDM Config" need setting appropriately
          * I2S MODE: SET ALL 2-3
          * TDM MODE: SET ALL 1-2, TDM SOURCE 3-4
          */
         /* Set Format to TDM/DSP with word length XUA_I2S_N_BITS */
-        WriteAllDacRegs(PCM5122_I2S, 0b00010000 | (alen));
+        // WriteAllDacRegs(PCM5122_I2S, 0b00010000 | (alen));
 
         /* Set offset to appropriately for each DAC */
-        for(int dacAddr = PCM5122_0_I2C_DEVICE_ADDR; dacAddr < (PCM5122_0_I2C_DEVICE_ADDR+4); dacAddr++)
-        {
-            const int dacOffset = dacAddr - PCM5122_0_I2C_DEVICE_ADDR;
-            result = i2c_reg_write(dacAddr, PCM5122_I2S_SHIFT, 1 + (dacOffset * XUA_I2S_N_BITS * 2));
-            assert(result == I2C_REGOP_SUCCESS && msg("DAC I2C write reg failed"));
-        }
-    }
+        // for(int dacAddr = PCM5122_0_I2C_DEVICE_ADDR; dacAddr < (PCM5122_0_I2C_DEVICE_ADDR+4); dacAddr++)
+        // {
+        //     const int dacOffset = dacAddr - PCM5122_0_I2C_DEVICE_ADDR;
+        //     result = i2c_reg_write(dacAddr, PCM5122_I2S_SHIFT, 1 + (dacOffset * XUA_I2S_N_BITS * 2));
+        //     assert(result == I2C_REGOP_SUCCESS && msg("DAC I2C write reg failed"));
+        // }
+    // }
 }
 
 /* Configures the external audio hardware for the required sample frequency */
 void AudioHwConfig(unsigned samFreq, unsigned mClk, unsigned dsdMode, unsigned sampRes_DAC, unsigned sampRes_ADC)
 {
-    WriteAllDacRegs(PCM5122_MUTE,           0x11); // Soft Mute both channels
+    // WriteAllDacRegs(PCM5122_MUTE,           0x11); // Soft Mute both channels
     delay_milliseconds(3);  // Wait for mute to take effect. This takes 104 samples, this is 2.4ms @ 44.1kHz. So lets say 3ms to cover everything.
-    WriteAllDacRegs(PCM5122_STANDBY_PWDN,   0x10); // Request standby mode while we change regs
+    // WriteAllDacRegs(PCM5122_STANDBY_PWDN,   0x10); // Request standby mode while we change regs
 
     if (USE_FRACTIONAL_N)
     {
