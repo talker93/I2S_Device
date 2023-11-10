@@ -163,23 +163,23 @@ uint8_t i2c_reg_read(uint8_t device_addr, uint8_t reg, i2c_regop_res_t &result)
 // #define PCM5122_AUTO_MUTE         0x41 // Auto Mute
 
 // PCM1865 (4-channel audio ADC) I2C Slave Addresses
-#define PCM1865_0_I2C_DEVICE_ADDR   (0x4A)
-#define PCM1865_1_I2C_DEVICE_ADDR   (0x4B)
+// #define PCM1865_0_I2C_DEVICE_ADDR   (0x4A)
+// #define PCM1865_1_I2C_DEVICE_ADDR   (0x4B)
 
 // PCM1865 (4-channel audio ADC) Register Addresses
-#define PCM1865_RESET               (0x00)
-#define PCM1865_PGA_VAL_CH1_L       (0x01)
-#define PCM1865_PGA_VAL_CH1_R       (0x02)
-#define PCM1865_PGA_VAL_CH2_L       (0x03)
-#define PCM1865_PGA_VAL_CH2_R       (0x04)
-#define PCM1865_ADC2_IP_SEL_L       (0x08) // Select input to route to ADC2 left input.
-#define PCM1865_ADC2_IP_SEL_R       (0x09) // Select input to route to ADC2 right input.
-#define PCM1865_FMT                 (0x0B) // RX_WLEN, TDM_LRCLK_MODE, TX_WLEN, FMT
-#define PCM1865_TDM_OSEL            (0x0C)
-#define PCM1865_TX_TDM_OFFSET       (0x0D)
-#define PCM1865_GPIO01_FUN          (0x10) // Functionality control for GPIO0 and GPIO1.
-#define PCM1865_GPIO01_DIR          (0x12) // Direction control for GPIO0 and GPIO1.
-#define PCM1865_CLK_CFG0            (0x20) // Basic clock config.
+// #define PCM1865_RESET               (0x00)
+// #define PCM1865_PGA_VAL_CH1_L       (0x01)
+// #define PCM1865_PGA_VAL_CH1_R       (0x02)
+// #define PCM1865_PGA_VAL_CH2_L       (0x03)
+// #define PCM1865_PGA_VAL_CH2_R       (0x04)
+// #define PCM1865_ADC2_IP_SEL_L       (0x08) // Select input to route to ADC2 left input.
+// #define PCM1865_ADC2_IP_SEL_R       (0x09) // Select input to route to ADC2 right input.
+// #define PCM1865_FMT                 (0x0B) // RX_WLEN, TDM_LRCLK_MODE, TX_WLEN, FMT
+// #define PCM1865_TDM_OSEL            (0x0C)
+// #define PCM1865_TX_TDM_OFFSET       (0x0D)
+// #define PCM1865_GPIO01_FUN          (0x10) // Functionality control for GPIO0 and GPIO1.
+// #define PCM1865_GPIO01_DIR          (0x12) // Direction control for GPIO0 and GPIO1.
+// #define PCM1865_CLK_CFG0            (0x20) // Basic clock config.
 
 unsafe client interface i2c_master_if i_i2c_client;
 
@@ -204,14 +204,14 @@ void WriteRegs(int deviceAddr, int numDevices, int regAddr, int regData)
 // }
 
 /* Note, this function assumes contiguous devices addresses */
-void WriteAllAdcRegs(int regAddr, int regData)
-{
-    WriteRegs(PCM1865_0_I2C_DEVICE_ADDR, 2, regAddr, regData);
-}
+// void WriteAllAdcRegs(int regAddr, int regData)
+// {
+//     WriteRegs(PCM1865_0_I2C_DEVICE_ADDR, 2, regAddr, regData);
+// }
 
 void SetI2CMux(int ch)
 {
-    i2c_regop_res_t result;
+    // i2c_regop_res_t result;
 
     // I2C mux takes the last byte written as the data for the control register.
     // We can't send only one byte so we send two with the data in the last byte.
