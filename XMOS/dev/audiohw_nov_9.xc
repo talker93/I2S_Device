@@ -129,38 +129,38 @@ uint8_t i2c_reg_read(uint8_t device_addr, uint8_t reg, i2c_regop_res_t &result)
 #define PCA9540B_CTRL_CHAN_NONE     (0x00) // Set Control Register to select neither channel
 
 // PCM5122 (2-channel audio DAC) I2C Slave Addresses
-#define PCM5122_0_I2C_DEVICE_ADDR   (0x4C)
-#define PCM5122_1_I2C_DEVICE_ADDR   (0x4D)
-#define PCM5122_2_I2C_DEVICE_ADDR   (0x4E)
-#define PCM5122_3_I2C_DEVICE_ADDR   (0x4F)
+// #define PCM5122_0_I2C_DEVICE_ADDR   (0x4C)
+// #define PCM5122_1_I2C_DEVICE_ADDR   (0x4D)
+// #define PCM5122_2_I2C_DEVICE_ADDR   (0x4E)
+// #define PCM5122_3_I2C_DEVICE_ADDR   (0x4F)
 
 // PCM5122 (2-channel audio DAC) Register Addresses
-#define PCM5122_PAGE              0x00 // Page select
-#define PCM5122_RESET             0x01 // Reset control
-#define PCM5122_STANDBY_PWDN      0x02 // Standby/Power Down control
-#define PCM5122_MUTE              0x03 // Mute control
-#define PCM5122_PLL               0x04 // PLL control
-#define PCM5122_BCK_LRCLK         0x09 // BCK, LRCLK configuration
-#define PCM5122_RBCK_LRCLK        0x0C // BCK, LRCLK reset
-#define PCM5122_SDAC              0x0E // DAC Clock Source Select
-#define PCM5122_PLL_P             0x14 // PLL P divider
-#define PCM5122_PLL_J             0x15 // PLL J divider
-#define PCM5122_PLL_D1            0x16 // PLL D1 divider
-#define PCM5122_PLL_D2            0x17 // PLL D2 divider
-#define PCM5122_PLL_R             0x18 // PLL R divider
-#define PCM5122_DDSP              0x1B // DSP clock divider
-#define PCM5122_DDAC              0x1C // DAC clock divider
-#define PCM5122_DNCP              0x1D // Negative Charge Pump clock divider
-#define PCM5122_DOSR              0x1E // Oversampling Ratio divider
-#define PCM5122_DBCK              0x20 // Master mode BCK divider
-#define PCM5122_DLRCK             0x21 // Master mode LRCK divider
-#define PCM5122_I16E_FS           0x22 // 16x Interpolate/FS Speed Mode.
-#define PCM5122_IDAC_MS           0x23 // IDAC[15:8]
-#define PCM5122_IDAC_LS           0x24 // IDAC[7:0]
-#define PCM5122_CLK_DET           0x25 // Clock detection/control
-#define PCM5122_I2S               0x28 // I2S configuration
-#define PCM5122_I2S_SHIFT         0x29 // I2S shift
-#define PCM5122_AUTO_MUTE         0x41 // Auto Mute
+// #define PCM5122_PAGE              0x00 // Page select
+// #define PCM5122_RESET             0x01 // Reset control
+// #define PCM5122_STANDBY_PWDN      0x02 // Standby/Power Down control
+// #define PCM5122_MUTE              0x03 // Mute control
+// #define PCM5122_PLL               0x04 // PLL control
+// #define PCM5122_BCK_LRCLK         0x09 // BCK, LRCLK configuration
+// #define PCM5122_RBCK_LRCLK        0x0C // BCK, LRCLK reset
+// #define PCM5122_SDAC              0x0E // DAC Clock Source Select
+// #define PCM5122_PLL_P             0x14 // PLL P divider
+// #define PCM5122_PLL_J             0x15 // PLL J divider
+// #define PCM5122_PLL_D1            0x16 // PLL D1 divider
+// #define PCM5122_PLL_D2            0x17 // PLL D2 divider
+// #define PCM5122_PLL_R             0x18 // PLL R divider
+// #define PCM5122_DDSP              0x1B // DSP clock divider
+// #define PCM5122_DDAC              0x1C // DAC clock divider
+// #define PCM5122_DNCP              0x1D // Negative Charge Pump clock divider
+// #define PCM5122_DOSR              0x1E // Oversampling Ratio divider
+// #define PCM5122_DBCK              0x20 // Master mode BCK divider
+// #define PCM5122_DLRCK             0x21 // Master mode LRCK divider
+// #define PCM5122_I16E_FS           0x22 // 16x Interpolate/FS Speed Mode.
+// #define PCM5122_IDAC_MS           0x23 // IDAC[15:8]
+// #define PCM5122_IDAC_LS           0x24 // IDAC[7:0]
+// #define PCM5122_CLK_DET           0x25 // Clock detection/control
+// #define PCM5122_I2S               0x28 // I2S configuration
+// #define PCM5122_I2S_SHIFT         0x29 // I2S shift
+// #define PCM5122_AUTO_MUTE         0x41 // Auto Mute
 
 // PCM1865 (4-channel audio ADC) I2C Slave Addresses
 #define PCM1865_0_I2C_DEVICE_ADDR   (0x4A)
@@ -198,10 +198,10 @@ void WriteRegs(int deviceAddr, int numDevices, int regAddr, int regData)
 }
 
 /* Note, this function assumes contiguous devices addresses */
-void WriteAllDacRegs(int regAddr, int regData)
-{
-    WriteRegs(PCM5122_0_I2C_DEVICE_ADDR, 4, regAddr, regData);
-}
+// void WriteAllDacRegs(int regAddr, int regData)
+// {
+//     WriteRegs(PCM5122_0_I2C_DEVICE_ADDR, 4, regAddr, regData);
+// }
 
 /* Note, this function assumes contiguous devices addresses */
 void WriteAllAdcRegs(int regAddr, int regData)
