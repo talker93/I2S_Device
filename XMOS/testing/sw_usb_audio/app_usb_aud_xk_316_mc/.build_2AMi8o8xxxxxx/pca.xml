@@ -1918,10 +1918,40 @@
 <fInfo name="WriteAllAdcRegs" global="true" specialize="false" noreturn="false" doNotSpecialize="false" numParams="2">
   <arg num="0" specialize="false">
     <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+      <value type="intval"><intval isSigned="true" val="7"/></value>
+      <value type="intval"><intval isSigned="true" val="11"/></value>
+      <value type="intval"><intval isSigned="true" val="12"/></value>
+      <value type="intval"><intval isSigned="true" val="13"/></value>
+      <value type="intval"><intval isSigned="true" val="14"/></value>
+      <value type="intval"><intval isSigned="true" val="33"/></value>
+      <value type="intval"><intval isSigned="true" val="59"/></value>
+      <value type="intval"><intval isSigned="true" val="60"/></value>
+      <value type="intval"><intval isSigned="true" val="61"/></value>
+      <value type="intval"><intval isSigned="true" val="65"/></value>
+      <value type="intval"><intval isSigned="true" val="66"/></value>
+      <value type="intval"><intval isSigned="true" val="70"/></value>
+      <value type="intval"><intval isSigned="true" val="71"/></value>
+      <value type="intval"><intval isSigned="true" val="75"/></value>
+      <value type="intval"><intval isSigned="true" val="76"/></value>
+      <value type="intval"><intval isSigned="true" val="115"/></value>
+      <value type="intval"><intval isSigned="true" val="116"/></value>
+      <value type="intval"><intval isSigned="true" val="117"/></value>
     </values>
   </arg>
   <arg num="1" specialize="false">
     <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+      <value type="intval"><intval isSigned="true" val="32"/></value>
+      <value type="intval"><intval isSigned="true" val="40"/></value>
+      <value type="intval"><intval isSigned="true" val="48"/></value>
+      <value type="intval"><intval isSigned="true" val="64"/></value>
+      <value type="intval"><intval isSigned="true" val="96"/></value>
+      <value type="intval"><intval isSigned="true" val="112"/></value>
+      <value type="intval"><intval isSigned="true" val="129"/></value>
+      <value type="intval"><intval isSigned="true" val="144"/></value>
+      <value type="intval"><intval isSigned="true" val="224"/></value>
+      <value type="intval"><intval isSigned="true" val="240"/></value>
     </values>
   </arg>
 </fInfo>
@@ -1938,10 +1968,40 @@
   </arg>
   <arg num="2" specialize="false">
     <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+      <value type="intval"><intval isSigned="true" val="7"/></value>
+      <value type="intval"><intval isSigned="true" val="11"/></value>
+      <value type="intval"><intval isSigned="true" val="12"/></value>
+      <value type="intval"><intval isSigned="true" val="13"/></value>
+      <value type="intval"><intval isSigned="true" val="14"/></value>
+      <value type="intval"><intval isSigned="true" val="33"/></value>
+      <value type="intval"><intval isSigned="true" val="59"/></value>
+      <value type="intval"><intval isSigned="true" val="60"/></value>
+      <value type="intval"><intval isSigned="true" val="61"/></value>
+      <value type="intval"><intval isSigned="true" val="65"/></value>
+      <value type="intval"><intval isSigned="true" val="66"/></value>
+      <value type="intval"><intval isSigned="true" val="70"/></value>
+      <value type="intval"><intval isSigned="true" val="71"/></value>
+      <value type="intval"><intval isSigned="true" val="75"/></value>
+      <value type="intval"><intval isSigned="true" val="76"/></value>
+      <value type="intval"><intval isSigned="true" val="115"/></value>
+      <value type="intval"><intval isSigned="true" val="116"/></value>
+      <value type="intval"><intval isSigned="true" val="117"/></value>
     </values>
   </arg>
   <arg num="3" specialize="false">
     <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+      <value type="intval"><intval isSigned="true" val="32"/></value>
+      <value type="intval"><intval isSigned="true" val="40"/></value>
+      <value type="intval"><intval isSigned="true" val="48"/></value>
+      <value type="intval"><intval isSigned="true" val="64"/></value>
+      <value type="intval"><intval isSigned="true" val="96"/></value>
+      <value type="intval"><intval isSigned="true" val="112"/></value>
+      <value type="intval"><intval isSigned="true" val="129"/></value>
+      <value type="intval"><intval isSigned="true" val="144"/></value>
+      <value type="intval"><intval isSigned="true" val="224"/></value>
+      <value type="intval"><intval isSigned="true" val="240"/></value>
     </values>
   </arg>
  <specializations>
@@ -2787,6 +2847,7 @@
     <values>
       <value type="intval"><intval isSigned="true" val="1"/></value>
       <value type="intval"><intval isSigned="true" val="3"/></value>
+      <value type="intval"><intval isSigned="true" val="10"/></value>
       <value type="intval"><intval isSigned="true" val="100"/></value>
     </values>
   </arg>
