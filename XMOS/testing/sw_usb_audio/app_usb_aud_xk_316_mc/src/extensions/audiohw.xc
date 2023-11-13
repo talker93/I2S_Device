@@ -165,6 +165,9 @@ uint8_t i2c_reg_read(uint8_t device_addr, uint8_t reg, i2c_regop_res_t &result)
 // PCM1865 (4-channel audio ADC) I2C Slave Addresses
 // #define PCM1865_0_I2C_DEVICE_ADDR   (0x4A)
 // #define PCM1865_1_I2C_DEVICE_ADDR   (0x4B)
+// ADC6140 I2C Slave Addresses
+#define ADC6140_0_I2C_DEVICE_ADDR (0x4E)
+#define ADC6140_1_I2C_DEVICE_ADDR (0x4D)
 
 // PCM1865 (4-channel audio ADC) Register Addresses
 // #define PCM1865_RESET               (0x00)
@@ -180,6 +183,85 @@ uint8_t i2c_reg_read(uint8_t device_addr, uint8_t reg, i2c_regop_res_t &result)
 // #define PCM1865_GPIO01_FUN          (0x10) // Functionality control for GPIO0 and GPIO1.
 // #define PCM1865_GPIO01_DIR          (0x12) // Direction control for GPIO0 and GPIO1.
 // #define PCM1865_CLK_CFG0            (0x20) // Basic clock config.
+
+// ADC6140 Register Addresses
+#define ADC6140_PAGE_CFG (0x00)
+#define ADC6140_SW_RESET (0x01)
+#define ADC6140_PAGE_CFG (0x00)
+#define ADC6140_SLEEP_CFG (0x02)
+#define ADC6140_SHDN_CFG (0x05)
+#define ADC6140_ASI_CFG0 (0x07)
+#define ADC6140_ASI_CFG1 (0x08)
+#define ADC6140_ASI_CFG2 (0x09)
+#define ADC6140_ASI_CH1 (0x0b)
+#define ADC6140_ASI_CH2 (0x0c)
+#define ADC6140_ASI_CH3 (0x0d)
+#define ADC6140_ASI_CH4 (0x0e)
+#define ADC6140_ASI_CH5 (0x0f)
+#define ADC6140_ASI_CH6 (0x10)
+#define ADC6140_ASI_CH7 (0x11)
+#define ADC6140_ASI_CH8 (0x12)
+#define ADC6140_MST_CFG0 (0x13)
+#define ADC6140_MST_CFG1 (0x14)
+#define ADC6140_ASI_STS (0x15)
+#define ADC6140_CLK_SRC (0x16)
+#define ADC6140_PDMCLK_CFG (0x1f)
+#define ADC6140_PDMIN_CFG (0x20)
+#define ADC6140_GPIO_CFG0 (0x21)
+#define ADC6140_GPO_CFG0 (0x22)
+#define ADC6140_GPO_CFG1 (0x23)
+#define ADC6140_GPO_CFG2 (0x24)
+#define ADC6140_GPO_CFG3 (0x25)
+#define ADC6140_GPO_VAL (0x29)
+#define ADC6140_GPIO_MON (0x2a)
+#define ADC6140_GPI_CFG0 (0x2b)
+#define ADC6140_GPI_CFG1 (0x2c)
+#define ADC6140_GPI_MON (0x2f)
+#define ADC6140_INT_CFG (0x32)
+#define ADC6140_INT_MASK0 (0x33)
+#define ADC6140_INT_LTCH0 (0x36)
+#define ADC6140_BIAS_CFG (0x3b)
+#define ADC6140_CH1_CFG0 (0x3c)
+#define ADC6140_CH1_CFG1 (0x3d)
+#define ADC6140_CH1_CFG2 (0x3e)
+#define ADC6140_CH1_CFG3 (0x3f)
+#define ADC6140_CH1_CFG4 (0x40)
+#define ADC6140_CH2_CFG0 (0x41)
+#define ADC6140_CH2_CFG1 (0x42)
+#define ADC6140_CH2_CFG2 (0x43)
+#define ADC6140_CH2_CFG3 (0x44)
+#define ADC6140_CH2_CFG4 (0x45)
+#define ADC6140_CH3_CFG0 (0x46)
+#define ADC6140_CH3_CFG1 (0x47)
+#define ADC6140_CH3_CFG2 (0x48)
+#define ADC6140_CH3_CFG3 (0x49)
+#define ADC6140_CH3_CFG4 (0x4a)
+#define ADC6140_CH4_CFG0 (0x4b)
+#define ADC6140_CH4_CFG1 (0x4c)
+#define ADC6140_CH4_CFG2 (0x4d)
+#define ADC6140_CH4_CFG3 (0x4e)
+#define ADC6140_CH4_CFG4 (0x4f)
+#define ADC6140_CH5_CFG2 (0x52)
+#define ADC6140_CH5_CFG3 (0x53)
+#define ADC6140_CH5_CFG4 (0x54)
+#define ADC6140_CH6_CFG2 (0x57)
+#define ADC6140_CH6_CFG3 (0x58)
+#define ADC6140_CH6_CFG4 (0x59)
+#define ADC6140_CH7_CFG2 (0x5c)
+#define ADC6140_CH7_CFG3 (0x5d)
+#define ADC6140_CH7_CFG4 (0x5e)
+#define ADC6140_CH8_CFG2 (0x61)
+#define ADC6140_CH8_CFG3 (0x62)
+#define ADC6140_CH8_CFG4 (0x63)
+#define ADC6140_DSP_CFG0 (0x6b)
+#define ADC6140_DSP_CFG1 (0x6c)
+#define ADC6140_DRE_CFG0 (0x6d)
+#define ADC6140_AGC_CFG0 (0x70)
+#define ADC6140_IN_CH_EN (0x73)
+#define ADC6140_ASI_OUT_CH_EN (0x74)
+#define ADC6140_PWR_CFG (0x75)
+#define ADC6140_DEV_STS0 (0x76)
+#define ADC6140_DEV_STS1 (0x77)
 
 unsafe client interface i2c_master_if i_i2c_client;
 
@@ -204,10 +286,10 @@ void WriteRegs(int deviceAddr, int numDevices, int regAddr, int regData)
 // }
 
 /* Note, this function assumes contiguous devices addresses */
-// void WriteAllAdcRegs(int regAddr, int regData)
-// {
-//     WriteRegs(PCM1865_0_I2C_DEVICE_ADDR, 2, regAddr, regData);
-// }
+void WriteAllAdcRegs(int regAddr, int regData)
+{
+    WriteRegs(ADC6140_0_I2C_DEVICE_ADDR, 1, regAddr, regData);
+}
 
 void SetI2CMux(int ch)
 {
