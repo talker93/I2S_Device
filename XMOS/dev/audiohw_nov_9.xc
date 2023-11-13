@@ -365,6 +365,51 @@ void AudioHwInit()
     // WriteAllAdcRegs(PCM1865_PGA_VAL_CH1_R,  0xFC);
     // WriteAllAdcRegs(PCM1865_PGA_VAL_CH2_L,  0xFC);
     // WriteAllAdcRegs(PCM1865_PGA_VAL_CH2_R,  0xFC);
+        // TLV reset
+    // ADC awake
+    WriteAllAdcRegs(ADC6140_SLEEP_CFG, 0b10010000);
+    delay_milliseconds(10);
+    WriteAllAdcRegs(ADC6140_SLEEP_CFG, 0b10000001);
+
+    // Data format
+    // Set to I2S with word-length 32
+    WriteAllAdcRegs(ADC6140_ASI_CFG0, 0b01110000);
+
+    // Output slot
+    // set slot positions for 4 channels
+    WriteAllAdcRegs(ADC6140_ASI_CH1, 0b00000000);
+    WriteAllAdcRegs(ADC6140_ASI_CH2, 0b00000000 + 32);
+    WriteAllAdcRegs(ADC6140_ASI_CH3, 0b01000000);
+    WriteAllAdcRegs(ADC6140_ASI_CH4, 0b01000000 + 32);
+
+    // GPIO1 enable
+    WriteAllAdcRegs(ADC6140_GPIO_CFG0, 0b00110000);
+
+    // BIAS for mic and adc
+    WriteAllAdcRegs(ADC6140_BIAS_CFG, (6 << 4));
+
+    // Input Mode
+    WriteAllAdcRegs(ADC6140_CH1_CFG0, 0b00000000);
+    WriteAllAdcRegs(ADC6140_CH2_CFG0, 0b00000000);
+    WriteAllAdcRegs(ADC6140_CH3_CFG0, 0b00000000);
+    WriteAllAdcRegs(ADC6140_CH4_CFG0, 0b00000000);
+
+    // Gain, unit in db
+    WriteAllAdcRegs(ADC6140_CH1_CFG1, (10 << 2));
+    WriteAllAdcRegs(ADC6140_CH2_CFG1, (10 << 2));
+    WriteAllAdcRegs(ADC6140_CH3_CFG1, (10 << 2));
+    WriteAllAdcRegs(ADC6140_CH4_CFG1, (10 << 2));
+
+    // input channel enable
+    // Enable 4 channels
+    WriteAllAdcRegs(ADC6140_IN_CH_EN, 0b11110000);
+
+    // Output channel enable
+    // Enable 4 channels
+    WriteAllAdcRegs(ADC6140_ASI_OUT_CH_EN, 0b11110000);
+
+    // Set mic bias, adc and pll
+    WriteAllAdcRegs(ADC6140_PWR_CFG, 0b11100000);
 
     // if (XUA_PCM_FORMAT == XUA_PCM_FORMAT_I2S)
     // {
