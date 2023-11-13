@@ -167,7 +167,7 @@ uint8_t i2c_reg_read(uint8_t device_addr, uint8_t reg, i2c_regop_res_t &result)
 // #define PCM1865_1_I2C_DEVICE_ADDR   (0x4B)
 // ADC6140 I2C Slave Addresses
 #define ADC6140_0_I2C_DEVICE_ADDR (0x4E)
-#define ADC6140_1_I2C_DEVICE_ADDR (0x4D)
+#define ADC6140_1_I2C_DEVICE_ADDR (0x4F)
 
 // PCM1865 (4-channel audio ADC) Register Addresses
 // #define PCM1865_RESET               (0x00)
@@ -288,7 +288,7 @@ void WriteRegs(int deviceAddr, int numDevices, int regAddr, int regData)
 /* Note, this function assumes contiguous devices addresses */
 void WriteAllAdcRegs(int regAddr, int regData)
 {
-    WriteRegs(ADC6140_0_I2C_DEVICE_ADDR, 1, regAddr, regData);
+    WriteRegs(ADC6140_0_I2C_DEVICE_ADDR, 2, regAddr, regData);
 }
 
 void SetI2CMux(int ch)
