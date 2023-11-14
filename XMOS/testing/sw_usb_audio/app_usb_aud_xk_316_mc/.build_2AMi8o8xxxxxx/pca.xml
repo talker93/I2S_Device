@@ -1943,7 +1943,6 @@
     <values>
       <value type="intval"><intval isSigned="true" val="0"/></value>
       <value type="intval"><intval isSigned="true" val="32"/></value>
-      <value type="intval"><intval isSigned="true" val="40"/></value>
       <value type="intval"><intval isSigned="true" val="48"/></value>
       <value type="intval"><intval isSigned="true" val="64"/></value>
       <value type="intval"><intval isSigned="true" val="96"/></value>
@@ -1993,7 +1992,6 @@
     <values>
       <value type="intval"><intval isSigned="true" val="0"/></value>
       <value type="intval"><intval isSigned="true" val="32"/></value>
-      <value type="intval"><intval isSigned="true" val="40"/></value>
       <value type="intval"><intval isSigned="true" val="48"/></value>
       <value type="intval"><intval isSigned="true" val="64"/></value>
       <value type="intval"><intval isSigned="true" val="96"/></value>

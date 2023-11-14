@@ -395,10 +395,10 @@ void AudioHwInit()
     WriteAllAdcRegs(ADC6140_CH4_CFG0, 0b00000000);
 
     // Gain, unit in db
-    WriteAllAdcRegs(ADC6140_CH1_CFG1, (10 << 2));
-    WriteAllAdcRegs(ADC6140_CH2_CFG1, (10 << 2));
-    WriteAllAdcRegs(ADC6140_CH3_CFG1, (10 << 2));
-    WriteAllAdcRegs(ADC6140_CH4_CFG1, (10 << 2));
+    WriteAllAdcRegs(ADC6140_CH1_CFG1, 0b00000000);
+    WriteAllAdcRegs(ADC6140_CH2_CFG1, 0b00000000);
+    WriteAllAdcRegs(ADC6140_CH3_CFG1, 0b00000000);
+    WriteAllAdcRegs(ADC6140_CH4_CFG1, 0b00000000);
 
     // input channel enable
     // Enable 4 channels
