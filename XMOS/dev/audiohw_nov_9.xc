@@ -275,7 +275,7 @@ void WriteRegs(int deviceAddr, int numDevices, int regAddr, int regData)
         {
             result = i2c_reg_write(i, regAddr, regData);
         }
-        // assert(result == I2C_REGOP_SUCCESS && msg("I2C write reg failed"));
+        assert(result == I2C_REGOP_SUCCESS && msg("I2C write reg failed"));
     }
 }
 
