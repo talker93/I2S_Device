@@ -6,7 +6,7 @@ cp audiohw_nov_9.xc ../testing/sw_usb_audio/app_usb_aud_xk_316_mc/src/extensions
 cd ../testing/sw_usb_audio/app_usb_aud_xk_316_mc && pwd && \
 	xmake CONFIG=2AMi2o2xxxxxx && \
 	# copy binary to the target folder
-	cd bin && cd 2AMi8o8xxxxxx && \
+	cd bin && cd 2AMi2o2xxxxxx && \
 	cp app_usb_aud_xk_316_mc_2AMi2o2xxxxxx.xe ../../../../../bin
 
 
