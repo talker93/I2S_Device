@@ -1,5 +1,5 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/buffer/ep/ep_buffer.xc">
-<fDef name="testct_byref" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/buffer/ep/ep_buffer.xc" noreturn="false" doNotSpecialize="true" numParams="2"/>
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/buffer/ep/ep_buffer.xc">
+<fDef name="testct_byref" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/buffer/ep/ep_buffer.xc" noreturn="false" doNotSpecialize="true" numParams="2"/>
 <fDef name="XUA_Buffer" global="true" noreturn="false" doNotSpecialize="false" numParams="7"/>
 <fDef name="XUA_Buffer_Ep" global="true" noreturn="true" doNotSpecialize="false" numParams="6"/>
 <fDef name="XUD_SetReady_In" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
@@ -490,7 +490,7 @@
 </fCall>
 <fCall name="__builtin_testct" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="testct_byref" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/buffer/ep/ep_buffer.xc"/>
+    <passThroughArg param="0" caller="testct_byref" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/buffer/ep/ep_buffer.xc"/>
     <values>
     </values>
   </arg>
@@ -555,7 +555,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="testct_byref" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/buffer/ep/ep_buffer.xc" numArgs="2">
+<fCall name="testct_byref" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/buffer/ep/ep_buffer.xc" numArgs="2">
   <arg num="0">
     <passThroughArg param="4" caller="XUA_Buffer_Ep" global="true"/>
     <values>

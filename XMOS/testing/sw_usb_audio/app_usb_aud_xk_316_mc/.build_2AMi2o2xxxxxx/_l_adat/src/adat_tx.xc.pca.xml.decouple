@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_adat/lib_adat/src/adat_tx.xc">
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_adat/lib_adat/src/adat_tx.xc">
 <fDef name="adat_transmit_until_ct_1x" global="true" noreturn="false" doNotSpecialize="false" numParams="3"/>
 <fDef name="adat_transmit_until_ct_2x" global="true" noreturn="false" doNotSpecialize="false" numParams="3"/>
 <fDef name="adat_transmit_until_ct_4x" global="true" noreturn="false" doNotSpecialize="false" numParams="3"/>

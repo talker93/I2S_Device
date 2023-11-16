@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_mic_array/lib_mic_array/src/decimate_to_pcm_4ch.S">
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_mic_array/lib_mic_array/src/decimate_to_pcm_4ch.S">
   <fCall global="true" name="mic_array_decimate_to_pcm_4ch"/>
   <fCall global="true" name="mic_array_decimate_to_pcm_4ch.nstackwords"/>
   <fCall global="true" name="mic_array_decimate_to_pcm_4ch.maxcores"/>

@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xud/lib_xud/src/core/XUD_USBTile_Support.S">
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xud/lib_xud/src/core/XUD_USBTile_Support.S">
   <fCall global="true" name="XUD_EnableUsbPortMux"/>
   <fCall global="true" name="XUD_EnableUsbPortMux.nstackwords"/>
   <fCall global="true" name="XUD_EnableUsbPortMux.maxchanends"/>

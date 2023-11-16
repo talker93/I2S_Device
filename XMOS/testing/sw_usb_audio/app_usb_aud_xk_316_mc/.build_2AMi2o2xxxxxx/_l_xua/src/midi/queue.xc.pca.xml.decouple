@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/midi/queue.xc">
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/midi/queue.xc">
 <fDef name="is_power_of_2" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>
 <fDef name="queue_init" global="true" noreturn="false" doNotSpecialize="false" numParams="2"/>
 <fDef name="queue_is_empty" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>

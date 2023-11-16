@@ -1,5 +1,5 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_dsp/lib_dsp/src/dsp_complex.xc">
-<fDef name="mul_by_frac" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_dsp/lib_dsp/src/dsp_complex.xc" noreturn="false" doNotSpecialize="true" numParams="3"/>
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_dsp/lib_dsp/src/dsp_complex.xc">
+<fDef name="mul_by_frac" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_dsp/lib_dsp/src/dsp_complex.xc" noreturn="false" doNotSpecialize="true" numParams="3"/>
 <fDef name="delay_microseconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
 <fDef name="delay_milliseconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
 <fDef name="delay_seconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
@@ -100,7 +100,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="mul_by_frac" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_dsp/lib_dsp/src/dsp_complex.xc" numArgs="3">
+<fCall name="mul_by_frac" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_dsp/lib_dsp/src/dsp_complex.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -117,7 +117,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="mul_by_frac" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_dsp/lib_dsp/src/dsp_complex.xc" numArgs="3">
+<fCall name="mul_by_frac" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_dsp/lib_dsp/src/dsp_complex.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>

@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_locks/lib_locks/src/swlock.c">
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_locks/lib_locks/src/swlock.c">
   <fCall global="true" name="swlock_init"/>
   <fCall global="true" name="swlock_init.nstackwords"/>
   <fCall global="true" name="swlock_init.maxcores"/>

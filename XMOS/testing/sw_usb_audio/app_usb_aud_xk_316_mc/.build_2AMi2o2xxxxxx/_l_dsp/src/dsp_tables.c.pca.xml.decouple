@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_dsp/lib_dsp/src/dsp_tables.c">
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_dsp/lib_dsp/src/dsp_tables.c">
   <fCall global="true" name="dsp_sine_4.globound"/>
   <fCall global="true" name="dsp_sine_4"/>
   <fCall global="true" name="dsp_sine_8.globound"/>

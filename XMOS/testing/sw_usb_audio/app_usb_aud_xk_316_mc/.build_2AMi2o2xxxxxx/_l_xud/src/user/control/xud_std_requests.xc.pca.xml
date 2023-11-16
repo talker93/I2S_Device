@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xud/lib_xud/src/user/control/xud_std_requests.xc">
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xud/lib_xud/src/user/control/xud_std_requests.xc">
 <fDef name="USB_ComposeSetupBuffer" global="true" noreturn="false" doNotSpecialize="false" numParams="2"/>
 <fDef name="USB_ParseSetupPacket" global="true" noreturn="false" doNotSpecialize="false" numParams="2"/>
 <fDef name="USB_PrintSetupPacket" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>

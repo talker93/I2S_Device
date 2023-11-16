@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/ports/audioports.c">
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/ports/audioports.c">
   <fCall global="true" name="EnableBufferedPort"/>
   <fCall global="true" name="EnableBufferedPort.nstackwords"/>
   <fCall global="true" name="EnableBufferedPort.maxcores"/>

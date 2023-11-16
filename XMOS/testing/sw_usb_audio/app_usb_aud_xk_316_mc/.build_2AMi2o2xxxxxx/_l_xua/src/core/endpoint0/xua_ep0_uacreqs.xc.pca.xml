@@ -1,10 +1,10 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc">
-<fDef name="longMul" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" noreturn="false" doNotSpecialize="false" numParams="3"/>
-<fDef name="storeFreq" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" noreturn="false" doNotSpecialize="false" numParams="3"/>
-<fDef name="storeInt" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" noreturn="false" doNotSpecialize="false" numParams="3"/>
-<fDef name="storeShort" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" noreturn="false" doNotSpecialize="false" numParams="3"/>
-<fDef name="updateMasterVol" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" noreturn="false" doNotSpecialize="false" numParams="2"/>
-<fDef name="updateVol" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc">
+<fDef name="longMul" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="storeFreq" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="storeInt" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="storeShort" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="updateMasterVol" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="updateVol" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" noreturn="false" doNotSpecialize="false" numParams="3"/>
 <fDef name="AudioClassRequests_2" global="true" noreturn="false" doNotSpecialize="false" numParams="6"/>
 <fDef name="FeedbackStabilityDelay" global="true" noreturn="false" doNotSpecialize="false" numParams="0"/>
 <fDef name="UpdateMixMap" global="true" noreturn="false" doNotSpecialize="false" numParams="4"/>
@@ -495,48 +495,48 @@
     </values>
   </arg>
 </fCall>
-<fCall name="storeInt" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="storeInt" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
     </values>
   </arg>
   <arg num="1">
-    <passThroughArg param="1" caller="storeFreq" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc"/>
+    <passThroughArg param="1" caller="storeFreq" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc"/>
     <values>
     </values>
   </arg>
   <arg num="2">
-    <passThroughArg param="2" caller="storeFreq" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc"/>
+    <passThroughArg param="2" caller="storeFreq" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
-<fCall name="storeInt" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="storeInt" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
     </values>
   </arg>
   <arg num="1">
-    <passThroughArg param="1" caller="storeFreq" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc"/>
+    <passThroughArg param="1" caller="storeFreq" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc"/>
     <values>
     </values>
   </arg>
   <arg num="2">
-    <passThroughArg param="2" caller="storeFreq" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc"/>
+    <passThroughArg param="2" caller="storeFreq" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
-<fCall name="storeInt" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="storeInt" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
     </values>
   </arg>
   <arg num="1">
-    <passThroughArg param="1" caller="storeFreq" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc"/>
+    <passThroughArg param="1" caller="storeFreq" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc"/>
     <values>
     </values>
   </arg>
@@ -592,7 +592,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="longMul" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="longMul" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -710,7 +710,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="longMul" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="longMul" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -727,14 +727,14 @@
     </values>
   </arg>
 </fCall>
-<fCall name="updateMasterVol" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="2">
+<fCall name="updateMasterVol" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="2">
   <arg num="0">
-    <passThroughArg param="0" caller="updateVol" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc"/>
+    <passThroughArg param="0" caller="updateVol" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc"/>
     <values>
     </values>
   </arg>
   <arg num="1">
-    <passThroughArg param="2" caller="updateVol" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc"/>
+    <passThroughArg param="2" caller="updateVol" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc"/>
     <values>
     </values>
   </arg>
@@ -773,7 +773,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="longMul" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="longMul" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -891,7 +891,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="longMul" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="longMul" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -1560,7 +1560,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="updateVol" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="updateVol" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -1584,7 +1584,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="updateVol" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="updateVol" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -1679,7 +1679,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="updateVol" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="updateVol" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -1703,7 +1703,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="updateVol" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="updateVol" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -1781,7 +1781,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="storeFreq" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="storeFreq" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -1798,7 +1798,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="storeFreq" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="storeFreq" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -1815,7 +1815,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="storeFreq" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="storeFreq" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -1832,7 +1832,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="storeShort" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="storeShort" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -1876,7 +1876,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="storeShort" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="storeShort" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -1893,7 +1893,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="storeShort" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="storeShort" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -1910,7 +1910,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="storeShort" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="storeShort" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -1927,7 +1927,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="storeShort" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="storeShort" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -1971,7 +1971,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="storeShort" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="storeShort" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -1988,7 +1988,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="storeShort" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="storeShort" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -2005,7 +2005,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="storeShort" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="storeShort" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -2022,7 +2022,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="storeShort" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
+<fCall name="storeShort" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.xc" numArgs="3">
   <arg num="0">
     <values>
       <value type="unknown"/>

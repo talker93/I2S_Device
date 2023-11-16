@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xud/lib_xud/src/core/XUD_HAL.c">
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xud/lib_xud/src/core/XUD_HAL.c">
   <fCall global="true" name="XUD_HAL_GetVBusState"/>
   <fCall global="true" name="XUD_HAL_GetVBusState.nstackwords"/>
   <fCall global="true" name="XUD_HAL_GetVBusState_.nstackwords"/>

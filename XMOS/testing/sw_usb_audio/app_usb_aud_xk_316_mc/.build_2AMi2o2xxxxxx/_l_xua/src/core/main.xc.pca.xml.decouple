@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/main.xc">
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/main.xc">
 <fDef name="HandleDfuRequest" global="true" interface="i_dfu" noreturn="false" doNotSpecialize="false" numParams="4"/>
 <fDef name="XUD_SetReady_In" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
 <fDef name="XUD_SetReady_InPtr" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
@@ -586,7 +586,7 @@
 <fCall name="DFUHandler" global="true" numArgs="2" impId="0">
   <arg num="0">
     <values>
-      <value type="interface"><interfaceInfo index="0" type="dist" func="DFUHandler" global="true" impUnit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/main.xc" impId="0" param="0"/></value>
+      <value type="interface"><interfaceInfo index="0" type="dist" func="DFUHandler" global="true" impUnit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/main.xc" impId="0" param="0"/></value>
     </values>
   </arg>
   <arg num="1">
@@ -747,7 +747,7 @@
   </arg>
   <arg num="6">
     <values>
-      <value type="interface"><interfaceInfo index="0" type="dist" func="DFUHandler" global="true" impUnit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/main.xc" impId="0" param="0"/></value>
+      <value type="interface"><interfaceInfo index="0" type="dist" func="DFUHandler" global="true" impUnit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/main.xc" impId="0" param="0"/></value>
     </values>
   </arg>
 </fCall>

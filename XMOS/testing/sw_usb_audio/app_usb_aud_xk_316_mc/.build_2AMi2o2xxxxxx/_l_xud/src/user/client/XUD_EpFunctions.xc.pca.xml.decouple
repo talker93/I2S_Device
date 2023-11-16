@@ -1,5 +1,5 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xud/lib_xud/src/user/client/XUD_EpFunctions.xc">
-<fDef name="min" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xud/lib_xud/src/user/client/XUD_EpFunctions.xc" noreturn="false" doNotSpecialize="true" numParams="2"/>
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xud/lib_xud/src/user/client/XUD_EpFunctions.xc">
+<fDef name="min" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xud/lib_xud/src/user/client/XUD_EpFunctions.xc" noreturn="false" doNotSpecialize="true" numParams="2"/>
 <fDef name="XUD_CloseEndpoint" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>
 <fDef name="XUD_DoGetRequest" global="true" noreturn="false" doNotSpecialize="false" numParams="5"/>
 <fDef name="XUD_InitEp" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>
@@ -73,7 +73,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="min" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xud/lib_xud/src/user/client/XUD_EpFunctions.xc" numArgs="2">
+<fCall name="min" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xud/lib_xud/src/user/client/XUD_EpFunctions.xc" numArgs="2">
   <arg num="0">
     <values>
       <value type="unknown"/>

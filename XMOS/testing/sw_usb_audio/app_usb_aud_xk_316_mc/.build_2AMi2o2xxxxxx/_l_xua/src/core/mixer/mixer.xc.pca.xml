@@ -1,9 +1,9 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc">
-<fDef name="GetSamplesFromDevice" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc" noreturn="false" doNotSpecialize="true" numParams="1"/>
-<fDef name="GetSamplesFromHost" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc" noreturn="false" doNotSpecialize="true" numParams="1"/>
-<fDef name="GiveSamplesToDevice" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc" noreturn="false" doNotSpecialize="true" numParams="2"/>
-<fDef name="GiveSamplesToHost" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc" noreturn="false" doNotSpecialize="true" numParams="2"/>
-<fDef name="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc" noreturn="true" doNotSpecialize="false" numParams="3"/>
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc">
+<fDef name="GetSamplesFromDevice" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="GetSamplesFromHost" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="GiveSamplesToDevice" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc" noreturn="false" doNotSpecialize="true" numParams="2"/>
+<fDef name="GiveSamplesToHost" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc" noreturn="false" doNotSpecialize="true" numParams="2"/>
+<fDef name="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc" noreturn="true" doNotSpecialize="false" numParams="3"/>
 <fDef name="XUD_SetReady_In" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
 <fDef name="XUD_SetReady_InPtr" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
 <fDef name="XUD_SetReady_OutPtr" global="true" noreturn="false" doNotSpecialize="true" numParams="2"/>
@@ -493,7 +493,7 @@
 </fCall>
 <fCall name="__builtin_out_uint" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="0" caller="GiveSamplesToHost" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="0" caller="GiveSamplesToHost" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
@@ -505,7 +505,7 @@
 </fCall>
 <fCall name="__builtin_in_uint" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="GetSamplesFromHost" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="0" caller="GetSamplesFromHost" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
@@ -534,7 +534,7 @@
 </fCall>
 <fCall name="__builtin_out_uint" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="0" caller="GiveSamplesToDevice" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="0" caller="GiveSamplesToDevice" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
@@ -546,21 +546,21 @@
 </fCall>
 <fCall name="__builtin_in_uint" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="GetSamplesFromDevice" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="0" caller="GetSamplesFromDevice" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_in_uint" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_out_uint" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
@@ -572,7 +572,7 @@
 </fCall>
 <fCall name="__builtin_inct_byref" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="1" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="1" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
@@ -584,7 +584,7 @@
 </fCall>
 <fCall name="__builtin_outct" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="1" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="1" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
@@ -596,56 +596,56 @@
 </fCall>
 <fCall name="__builtin_in_uint" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="1" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="1" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_in_uint" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="1" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="1" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_in_uint" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="1" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="1" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_inct" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="1" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="1" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_testct" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_inct" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_in_uint" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_outct" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
@@ -657,7 +657,7 @@
 </fCall>
 <fCall name="__builtin_out_uint" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
@@ -669,7 +669,7 @@
 </fCall>
 <fCall name="__builtin_outct" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
@@ -681,7 +681,7 @@
 </fCall>
 <fCall name="__builtin_out_uint" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
@@ -693,14 +693,14 @@
 </fCall>
 <fCall name="__builtin_in_uint" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_out_uint" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
@@ -712,14 +712,14 @@
 </fCall>
 <fCall name="__builtin_in_uint" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_chkct" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
@@ -731,7 +731,7 @@
 </fCall>
 <fCall name="__builtin_outct" global="true" numArgs="2">
   <arg num="0">
-    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
@@ -741,9 +741,9 @@
     </values>
   </arg>
 </fCall>
-<fCall name="GiveSamplesToDevice" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc" numArgs="2">
+<fCall name="GiveSamplesToDevice" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc" numArgs="2">
   <arg num="0">
-    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
@@ -753,23 +753,23 @@
     </values>
   </arg>
 </fCall>
-<fCall name="GetSamplesFromDevice" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc" numArgs="1">
+<fCall name="GetSamplesFromDevice" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc" numArgs="1">
   <arg num="0">
-    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="2" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
-<fCall name="GetSamplesFromHost" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc" numArgs="1">
+<fCall name="GetSamplesFromHost" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc" numArgs="1">
   <arg num="0">
-    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
 </fCall>
-<fCall name="GiveSamplesToHost" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc" numArgs="2">
+<fCall name="GiveSamplesToHost" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc" numArgs="2">
   <arg num="0">
-    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
+    <passThroughArg param="0" caller="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc"/>
     <values>
     </values>
   </arg>
@@ -779,7 +779,7 @@
     </values>
   </arg>
 </fCall>
-<fCall name="mixer1" global="false" unit="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/mixer/mixer.xc" numArgs="3" impId="0">
+<fCall name="mixer1" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/mixer/mixer.xc" numArgs="3" impId="0">
   <arg num="0">
     <passThroughArg param="0" caller="mixer" global="true"/>
     <values>

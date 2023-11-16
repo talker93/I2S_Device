@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_endpoint0.c">
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_endpoint0.c">
   <fCall global="true" name="XUA_Endpoint0_setVendorId"/>
   <fCall global="true" name="XUA_Endpoint0_setVendorId.nstackwords"/>
   <fCall global="true" name="XUA_Endpoint0_setVendorId.maxcores"/>

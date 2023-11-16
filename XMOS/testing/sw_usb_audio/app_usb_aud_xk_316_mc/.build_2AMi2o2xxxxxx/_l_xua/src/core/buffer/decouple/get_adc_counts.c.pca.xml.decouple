@@ -1,4 +1,4 @@
-<preCompilationAnalysis file="C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/buffer/decouple/get_adc_counts.c">
+<preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/buffer/decouple/get_adc_counts.c">
   <fCall global="true" name="GetADCCounts"/>
   <fCall global="true" name="GetADCCounts.nstackwords"/>
   <fCall global="true" name="GetADCCounts.maxcores"/>
