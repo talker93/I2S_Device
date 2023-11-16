@@ -4,10 +4,10 @@ cp xua_conf_nov_9.h ../testing/sw_usb_audio/app_usb_aud_xk_316_mc/src/core/xua_c
 cp audiohw_nov_9.xc ../testing/sw_usb_audio/app_usb_aud_xk_316_mc/src/extensions/audiohw.xc && \
 # go to the root and compile
 cd ../testing/sw_usb_audio/app_usb_aud_xk_316_mc && pwd && \
-	xmake CONFIG=2AMi10o6xxxxxx && \
+	xmake CONFIG=2AMi10o10xxxxxx && \
 	# copy binary to the target folder
 	cd bin && cd 2AMi8o8xxxxxx && \
-	cp app_usb_aud_xk_316_mc_2AMi10o6xxxxxx.xe ../../../../../bin
+	cp app_usb_aud_xk_316_mc_2AMi10o10xxxxxx.xe ../../../../../bin
 
 
 
