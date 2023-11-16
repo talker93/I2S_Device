@@ -2,6 +2,7 @@
 cp xk-audio-316-mc_nov_9.xn ../testing/sw_usb_audio/app_usb_aud_xk_316_mc/src/core/xk-audio-316-mc.xn && \
 cp xua_conf_nov_9.h ../testing/sw_usb_audio/app_usb_aud_xk_316_mc/src/core/xua_conf.h && \
 cp audiohw_nov_9.xc ../testing/sw_usb_audio/app_usb_aud_xk_316_mc/src/extensions/audiohw.xc && \
+cp Makefile ../testing/sw_usb_audio/app_usb_aud_xk_316_mc/Makefile && \
 # go to the root and compile
 cd ../testing/sw_usb_audio/app_usb_aud_xk_316_mc && pwd && \
 	xmake CONFIG=2AMi2o2xxxxxx && \
