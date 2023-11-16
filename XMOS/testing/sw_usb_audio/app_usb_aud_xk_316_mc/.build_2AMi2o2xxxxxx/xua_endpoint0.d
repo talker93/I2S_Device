@@ -1,5 +1,5 @@
 xua_endpoint0.o: \
-  C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_endpoint0.c \
+  C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_endpoint0.c \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xassert/lib_xassert/api\xassert.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api\xua.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua_conf_full.h \
@@ -22,16 +22,17 @@ xua_endpoint0.o: \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xud/lib_xud/src/user/class\usbaudio20.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xud/lib_xud/src/user/class/usbaudiocommon.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xud/lib_xud/api\xud_conf_default.h \
-  C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_descriptors.h \
-  C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/descriptor_defs.h \
+  C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_descriptors.h \
+  C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/descriptor_defs.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/hid\xua_hid_descriptor.h \
-  C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/chanstrings.h \
+  C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/chanstrings.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core\xua_commands.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/audiohub\dsd_support.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/user/audiostream\audiostream.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/user/hostactive\hostactive.h \
+  C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/vendorrequests.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/support\xc_ptr.h \
-  C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.h \
+  C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/xua_ep0_uacreqs.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_logging/lib_logging/api\debug_print.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api\xua_usb_params_funcs.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/dfu\xua_dfu.h

@@ -1,5 +1,5 @@
 decouple_interrupt.o: \
-  C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/buffer/decouple/decouple_interrupt.c \
+  C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/buffer/decouple/decouple_interrupt.c \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api\xua.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua_conf_full.h \
   .././src/core\xua_conf.h .././src/core/../../../shared/version.h \
@@ -17,4 +17,4 @@ decouple_interrupt.o: \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua_buffer.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua_mixer.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua.h \
-  C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/buffer/decouple/interrupt.h
+  C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/buffer/decouple/interrupt.h

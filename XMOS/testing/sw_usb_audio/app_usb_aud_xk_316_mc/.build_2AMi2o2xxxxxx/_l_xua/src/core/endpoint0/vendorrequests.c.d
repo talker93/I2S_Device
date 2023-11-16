@@ -1,5 +1,5 @@
 .build_2AMi2o2xxxxxx/_l_xua/src/core/endpoint0/vendorrequests.c.d .build_2AMi2o2xxxxxx/_l_xua/src/core/endpoint0/vendorrequests.c.o .build_2AMi2o2xxxxxx/_l_xua/src/core/endpoint0/vendorrequests.c.pca.xml: \
-  C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/core/endpoint0/vendorrequests.c \
+  C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/vendorrequests.c \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api\xua.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua_conf_full.h \
   ./././src/core\xua_conf.h ./././src/core/../../../shared/version.h \
@@ -16,5 +16,6 @@
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xud/lib_xud/api/xud_std_requests.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua_buffer.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua_mixer.h \
-  C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua.h
+  C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua.h \
+  C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/endpoint0/vendorrequests.h
 

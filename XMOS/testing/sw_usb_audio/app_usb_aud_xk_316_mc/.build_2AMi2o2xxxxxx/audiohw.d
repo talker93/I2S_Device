@@ -4,9 +4,9 @@ audiohw.o: \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_i2c/lib_i2c/api/i2c.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua_conf_full.h \
-  C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/sw_usb_audio/app_usb_aud_xk_316_mc/src/core/xua_conf.h \
-  C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/sw_usb_audio/shared/version.h \
-  C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/sw_usb_audio/app_usb_aud_xk_316_mc/src/extensions/user_main.h \
+  C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/sw_usb_audio/app_usb_aud_xk_316_mc/src/core/xua_conf.h \
+  C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/sw_usb_audio/shared/version.h \
+  C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/sw_usb_audio/app_usb_aud_xk_316_mc/src/extensions/user_main.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua_conf_default.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua_audiohub.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/src/dfu/dfu_interface.h \
@@ -21,6 +21,6 @@ audiohw.o: \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua_clocking.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua_mixer.h \
   C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/lib_xua/lib_xua/api/xua_midi.h \
-  C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/sw_usb_audio/shared/apppll.h \
-  C:/Users/jiang/Downloads/sw_usb_audio-[sw]_7_3_1/sw_usb_audio/shared/cs2100.h
+  C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/sw_usb_audio/shared/apppll.h \
+  C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/sw_usb_audio/shared/cs2100.h
 
