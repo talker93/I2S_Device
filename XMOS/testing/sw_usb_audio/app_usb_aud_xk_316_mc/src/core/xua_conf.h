@@ -61,12 +61,12 @@
 /*** Defines relating to channel counts ***/
 /* Number of I2S channels to DACs*/
 #ifndef I2S_CHANS_DAC
-#define I2S_CHANS_DAC      (8)
+#define I2S_CHANS_DAC      (6)
 #endif
 
 /* Number of I2S channels from ADCs */
 #ifndef I2S_CHANS_ADC
-#define I2S_CHANS_ADC      (8)
+#define I2S_CHANS_ADC      (10)
 #endif
 
 /* Number of USB streaming channels - by default calculate by counting audio interfaces */
@@ -137,8 +137,8 @@
 #ifndef PID_AUDIO_1
 #define PID_AUDIO_1        (0x0017)
 #endif
-#define PRODUCT_STR_A2     "Biomedical Microsystems Laboratory - ADC module"
-#define PRODUCT_STR_A1     "Biomedical Microsystems Laboratory - ADC module"
+#define PRODUCT_STR_A2     "Biomedical Microsystems Lab ADC"
+#define PRODUCT_STR_A1     "Biomedical Microsystems Lab ADC"
 
 /* Board power source - Default is bus-powered */
 #ifndef XUA_POWERMODE
