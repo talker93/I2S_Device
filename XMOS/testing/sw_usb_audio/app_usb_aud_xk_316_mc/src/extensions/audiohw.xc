@@ -288,7 +288,7 @@ void WriteRegs(int deviceAddr, int numDevices, int regAddr, int regData)
 /* Note, this function assumes contiguous devices addresses */
 void WriteAllAdcRegs(int regAddr, int regData)
 {
-    WriteRegs(ADC6140_0_I2C_DEVICE_ADDR, 2, regAddr, regData);
+    WriteRegs(ADC6140_0_I2C_DEVICE_ADDR, 1, regAddr, regData);
 }
 
 void SetI2CMux(int ch)
