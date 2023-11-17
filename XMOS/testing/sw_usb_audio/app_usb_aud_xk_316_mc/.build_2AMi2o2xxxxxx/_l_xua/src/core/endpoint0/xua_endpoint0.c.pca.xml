@@ -108,11 +108,9 @@
   <fCall global="true" name="VendorRequests.nstackwords"/>
   <fCall global="true" name="USB_StandardRequests.nstackwords"/>
   <fCall global="true" name="XUD_ResetEndpoint.nstackwords"/>
-  <fCall global="true" name="UserAudioOutputStreamStop.nstackwords"/>
   <fCall global="true" name="UserAudioStreamStop.nstackwords"/>
-  <fCall global="true" name="UserAudioOutputStreamStart.nstackwords"/>
-  <fCall global="true" name="UserAudioStreamStart.nstackwords"/>
   <fCall global="true" name="UserAudioInputStreamStop.nstackwords"/>
+  <fCall global="true" name="UserAudioStreamStart.nstackwords"/>
   <fCall global="true" name="UserAudioInputStreamStart.nstackwords"/>
   <fCall global="true" name="DFUDeviceRequests.nstackwords"/>
   <fCall global="true" name="AudioClassRequests_2.nstackwords"/>
@@ -125,8 +123,6 @@
   <fCall global="true" name="USB_StandardRequests.maxcores"/>
   <fCall global="true" name="UserAudioInputStreamStart.maxcores"/>
   <fCall global="true" name="UserAudioInputStreamStop.maxcores"/>
-  <fCall global="true" name="UserAudioOutputStreamStart.maxcores"/>
-  <fCall global="true" name="UserAudioOutputStreamStop.maxcores"/>
   <fCall global="true" name="UserAudioStreamStart.maxcores"/>
   <fCall global="true" name="UserAudioStreamStop.maxcores"/>
   <fCall global="true" name="UserHostActive.maxcores"/>
@@ -140,8 +136,6 @@
   <fCall global="true" name="USB_StandardRequests.maxtimers"/>
   <fCall global="true" name="UserAudioInputStreamStart.maxtimers"/>
   <fCall global="true" name="UserAudioInputStreamStop.maxtimers"/>
-  <fCall global="true" name="UserAudioOutputStreamStart.maxtimers"/>
-  <fCall global="true" name="UserAudioOutputStreamStop.maxtimers"/>
   <fCall global="true" name="UserAudioStreamStart.maxtimers"/>
   <fCall global="true" name="UserAudioStreamStop.maxtimers"/>
   <fCall global="true" name="UserHostActive.maxtimers"/>
@@ -155,8 +149,6 @@
   <fCall global="true" name="USB_StandardRequests.maxchanends"/>
   <fCall global="true" name="UserAudioInputStreamStart.maxchanends"/>
   <fCall global="true" name="UserAudioInputStreamStop.maxchanends"/>
-  <fCall global="true" name="UserAudioOutputStreamStart.maxchanends"/>
-  <fCall global="true" name="UserAudioOutputStreamStop.maxchanends"/>
   <fCall global="true" name="UserAudioStreamStart.maxchanends"/>
   <fCall global="true" name="UserAudioStreamStop.maxchanends"/>
   <fCall global="true" name="UserHostActive.maxchanends"/>
@@ -221,8 +213,6 @@
   <fCall global="true" name="g_chanCount_In_HS"/>
   <fCall global="true" name="mixer1Weights.globound"/>
   <fCall global="true" name="mixer1Weights"/>
-  <fCall global="true" name="channelMapAud.globound"/>
-  <fCall global="true" name="channelMapAud"/>
   <fCall global="true" name="channelMapUsb.globound"/>
   <fCall global="true" name="channelMapUsb"/>
   <fCall global="true" name="mixSel.globound"/>
@@ -237,18 +227,18 @@
   <fCall global="true" name="volsIn"/>
   <fCall global="true" name="mutesIn.globound"/>
   <fCall global="true" name="mutesIn"/>
+  <fCall global="true" name="channelMapAud.globound"/>
+  <fCall global="true" name="channelMapAud"/>
   <fCall global="true" name="strlen"/>
   <fCall global="true" name="strncpy"/>
   <fCall global="true" name="strncat"/>
   <fCall global="true" name="XUD_InitEp"/>
   <fCall global="true" name="VendorRequests_Init"/>
   <fCall global="true" name="DFUReportResetState"/>
-  <fCall global="true" name="UserAudioInputStreamStart"/>
   <fCall global="true" name="UserAudioStreamStart"/>
-  <fCall global="true" name="UserAudioInputStreamStop"/>
+  <fCall global="true" name="UserAudioInputStreamStart"/>
   <fCall global="true" name="UserAudioStreamStop"/>
-  <fCall global="true" name="UserAudioOutputStreamStart"/>
-  <fCall global="true" name="UserAudioOutputStreamStop"/>
+  <fCall global="true" name="UserAudioInputStreamStop"/>
   <fCall global="true" name="UserHostActive"/>
   <fCall global="true" name="DFUDeviceRequests"/>
   <fCall global="true" name="DFUDelay"/>
