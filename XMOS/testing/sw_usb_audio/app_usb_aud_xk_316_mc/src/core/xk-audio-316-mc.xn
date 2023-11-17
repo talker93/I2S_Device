@@ -50,7 +50,8 @@
             <Port Location="XS1_PORT_1I"  Name="PORT_I2S_ADC4"/>
             <Port Location="XS1_PORT_1J"  Name="PORT_I2S_ADC5"/>
             <Port Location="XS1_PORT_1K"  Name="PORT_I2S_ADC6"/>
-            <Port Location="XS1_PORT_1L"  Name="PORT_I2S_DAC0"/>
+            <!-- <Port Location="XS1_PORT_1L"  Name="PORT_I2S_ADC7"/> -->
+            <Port Location="XS1_PORT_1H"  Name="PORT_I2S_DAC0"/>
             
             <!-- Audio Ports: Digital -->         
             <Port Location="XS1_PORT_1G"  Name="PORT_ADAT_OUT"/>  <!-- A: Coax G: Optical --> 
