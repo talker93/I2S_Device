@@ -105,9 +105,9 @@ on tile[AUDIO_IO_TILE] : buffered in port:32 p_i2s_adc[I2S_WIRES_ADC] =
 #if I2S_WIRES_ADC > 6
                 PORT_I2S_ADC6,
 #endif
-#if I2S_WIRES_ADC > 7
+// #if I2S_WIRES_ADC > 7
 // #error I2S_WIRES_ADC value is too large!
-#endif
+// #endif
 #if I2S_WIRES_ADC > 0
                 };
 #else
