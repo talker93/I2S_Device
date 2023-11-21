@@ -9,6 +9,7 @@
 #if (XUA_PCM_FORMAT == XUA_PCM_FORMAT_TDM) && (XUA_I2S_N_BITS != 32)
 #warning ADC only supports TDM operation at 32 bits
 #endif
+#dummy change
 
 port p_scl = PORT_I2C_SCL;
 port p_sda = PORT_I2C_SDA;
