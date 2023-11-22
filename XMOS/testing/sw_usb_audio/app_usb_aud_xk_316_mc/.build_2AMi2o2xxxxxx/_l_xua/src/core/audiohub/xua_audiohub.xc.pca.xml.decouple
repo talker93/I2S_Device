@@ -731,37 +731,6 @@
     </values>
   </arg>
 </fCall>
-<fCall name="__builtin_partout" global="true" numArgs="3">
-  <arg num="0">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-  <arg num="1">
-    <values>
-      <value type="intval"><intval isSigned="true" val="32"/></value>
-    </values>
-  </arg>
-  <arg num="2">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-</fCall>
-<fCall name="__builtin_bitrev" global="true" numArgs="1">
-  <arg num="0">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-</fCall>
-<fCall name="__builtin_bitrev" global="true" numArgs="1">
-  <arg num="0">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-</fCall>
 <fCall name="__builtin_set_port_shift" global="true" numArgs="2">
   <arg num="0">
     <values>
@@ -781,37 +750,6 @@
     </values>
   </arg>
   <arg num="1">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-</fCall>
-<fCall name="__builtin_bitrev" global="true" numArgs="1">
-  <arg num="0">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-</fCall>
-<fCall name="__builtin_partout" global="true" numArgs="3">
-  <arg num="0">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-  <arg num="1">
-    <values>
-      <value type="intval"><intval isSigned="true" val="32"/></value>
-    </values>
-  </arg>
-  <arg num="2">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-</fCall>
-<fCall name="__builtin_bitrev" global="true" numArgs="1">
-  <arg num="0">
     <values>
       <value type="unknown"/>
     </values>
@@ -929,7 +867,7 @@
 </fCall>
 <fCall name="AudioHwInit" global="true" numArgs="0">
 </fCall>
-<fCall name="ConfigAudioPortsWrapper" global="true" numArgs="10">
+<fCall name="ConfigAudioPortsWrapper" global="true" numArgs="8">
   <arg num="0">
     <values>
       <value type="unknown"/>
@@ -937,21 +875,21 @@
   </arg>
   <arg num="1">
     <values>
-      <value type="intval"><intval isSigned="true" val="1"/></value>
+      <value type="intval"><intval isSigned="true" val="9"/></value>
     </values>
   </arg>
   <arg num="2">
+    <passThroughArg param="4" caller="XUA_AudioHub" global="true"/>
     <values>
-      <value type="unknown"/>
     </values>
   </arg>
   <arg num="3">
     <values>
-      <value type="intval"><intval isSigned="true" val="8"/></value>
+      <value type="unknown"/>
     </values>
   </arg>
   <arg num="4">
-    <passThroughArg param="4" caller="XUA_AudioHub" global="true"/>
+    <passThroughArg param="3" caller="XUA_AudioHub" global="true"/>
     <values>
     </values>
   </arg>
@@ -961,21 +899,11 @@
     </values>
   </arg>
   <arg num="6">
-    <passThroughArg param="3" caller="XUA_AudioHub" global="true"/>
     <values>
+      <value type="unknown"/>
     </values>
   </arg>
   <arg num="7">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-  <arg num="8">
-    <values>
-      <value type="unknown"/>
-    </values>
-  </arg>
-  <arg num="9">
     <values>
       <value type="unknown"/>
     </values>

@@ -545,7 +545,7 @@
   </arg>
   <arg num="6">
     <values>
-      <value type="unknown"/>
+      <value type="null"/>
     </values>
   </arg>
   <arg num="7">
