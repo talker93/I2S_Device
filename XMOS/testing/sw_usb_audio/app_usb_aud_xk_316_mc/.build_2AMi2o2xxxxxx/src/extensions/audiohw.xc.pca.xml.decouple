@@ -1246,7 +1246,7 @@
   </arg>
   <arg num="1">
     <values>
-      <value type="intval"><intval isSigned="true" val="278"/></value>
+      <value type="intval"><intval isSigned="true" val="279"/></value>
     </values>
   </arg>
   <arg num="2">
@@ -1309,7 +1309,7 @@
   </arg>
   <arg num="1">
     <values>
-      <value type="intval"><intval isSigned="true" val="306"/></value>
+      <value type="intval"><intval isSigned="true" val="307"/></value>
     </values>
   </arg>
   <arg num="2">
