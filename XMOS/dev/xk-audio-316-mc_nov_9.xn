@@ -36,7 +36,6 @@
             <!-- Audio Ports: Digital -->         
             <Port Location="XS1_PORT_1O"  Name="PORT_ADAT_IN"/>   <!-- N: Coax O: Optical --> 
             <Port Location="XS1_PORT_1N"  Name="PORT_SPDIF_IN"/>  <!-- N: Coax O: Optical --> 
-            <Port Location="XS1_PORT_1I"  Name="PORT_I2S_ADC8"/>  <!-- 1I is X0D24 -->
             
           </Tile>
           <Tile Number="1" Reference="tile[1]">
@@ -53,7 +52,9 @@
             <Port Location="XS1_PORT_1K"  Name="PORT_I2S_ADC6"/>
             <Port Location="XS1_PORT_1L"  Name="PORT_I2S_ADC7"/>
             <!-- XS1_PORT_1F is J41 MIDI_RX -->
-            <!-- <Port Location="XS1_PORT_1F"  Name="PORT_I2S_ADC8"/> -->
+            <Port Location="XS1_PORT_1F"  Name="PORT_I2S_ADC8"/>
+            <Port Location="XS1_PORT_1H"  Name="PORT_I2S_ADC9"/>
+            <Port Location="XS1_PORT_1E"  Name="PORT_I2S_ADC10"/>
             <!-- 1E and 1H is unused -->
             
             <!-- Audio Ports: Digital -->         
