@@ -1993,7 +1993,7 @@
    </specialization>
  </specializations>
 </fInfo>
-<fInfo name="XUA_AudioHub" global="true" specialize="false" noreturn="true" doNotSpecialize="false" numParams="8">
+<fInfo name="XUA_AudioHub" global="true" specialize="true" noreturn="true" doNotSpecialize="false" numParams="8">
   <arg num="0" specialize="false">
     <values>
       <value type="unknown"/>
@@ -2024,9 +2024,9 @@
       <value type="unknown"/>
     </values>
   </arg>
-  <arg num="6" specialize="false">
+  <arg num="6" specialize="true">
     <values>
-      <value type="unknown"/>
+      <value type="null"/>
     </values>
   </arg>
   <arg num="7" specialize="false">
@@ -2034,6 +2034,18 @@
       <value type="unknown"/>
     </values>
   </arg>
+ <specializations>
+   <specialization id="0">
+    <arg num="0"><values><value type="unknown"/></values></arg>
+    <arg num="1"><values><value type="unknown"/></values></arg>
+    <arg num="2"><values><value type="unknown"/></values></arg>
+    <arg num="3"><values><value type="unknown"/></values></arg>
+    <arg num="4"><values><value type="unknown"/></values></arg>
+    <arg num="5"><values><value type="unknown"/></values></arg>
+    <arg num="6"><values><value type="null"/></values></arg>
+    <arg num="7"><values><value type="unknown"/></values></arg>
+   </specialization>
+ </specializations>
 </fInfo>
 <fInfo name="XUA_Buffer" global="true" specialize="false" noreturn="false" doNotSpecialize="false" numParams="7">
   <arg num="0" specialize="false">
