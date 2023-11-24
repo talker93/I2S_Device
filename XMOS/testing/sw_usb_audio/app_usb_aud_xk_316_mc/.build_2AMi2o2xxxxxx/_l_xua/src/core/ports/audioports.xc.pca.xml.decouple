@@ -1,5 +1,5 @@
 <preCompilationAnalysis file="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/ports/audioports.xc">
-<fDef name="ConfigAudioPorts" global="true" noreturn="false" doNotSpecialize="false" numParams="8"/>
+<fDef name="ConfigAudioPorts" global="true" noreturn="false" doNotSpecialize="false" numParams="10"/>
 <fDef name="XUD_SetReady_In" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
 <fDef name="XUD_SetReady_InPtr" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
 <fDef name="XUD_SetReady_OutPtr" global="true" noreturn="false" doNotSpecialize="true" numParams="2"/>
@@ -487,8 +487,15 @@
 </fCall>
 <fCall name="__builtin_stop_clock" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="5" caller="ConfigAudioPorts" global="true"/>
+    <passThroughArg param="7" caller="ConfigAudioPorts" global="true"/>
     <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_clear_buff" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
     </values>
   </arg>
 </fCall>
@@ -515,7 +522,7 @@
 </fCall>
 <fCall name="configure_clock_src_divide" global="true" numArgs="3">
   <arg num="0">
-    <passThroughArg param="5" caller="ConfigAudioPorts" global="true"/>
+    <passThroughArg param="7" caller="ConfigAudioPorts" global="true"/>
     <values>
     </values>
   </arg>
@@ -537,7 +544,7 @@
     </values>
   </arg>
   <arg num="1">
-    <passThroughArg param="5" caller="ConfigAudioPorts" global="true"/>
+    <passThroughArg param="7" caller="ConfigAudioPorts" global="true"/>
     <values>
     </values>
   </arg>
@@ -549,7 +556,7 @@
     </values>
   </arg>
   <arg num="1">
-    <passThroughArg param="5" caller="ConfigAudioPorts" global="true"/>
+    <passThroughArg param="7" caller="ConfigAudioPorts" global="true"/>
     <values>
     </values>
   </arg>
@@ -583,6 +590,23 @@
     </values>
   </arg>
 </fCall>
+<fCall name="configure_out_port" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="7" caller="ConfigAudioPorts" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
 <fCall name="configure_in_port" global="true" numArgs="2">
   <arg num="0">
     <values>
@@ -590,14 +614,14 @@
     </values>
   </arg>
   <arg num="1">
-    <passThroughArg param="5" caller="ConfigAudioPorts" global="true"/>
+    <passThroughArg param="7" caller="ConfigAudioPorts" global="true"/>
     <values>
     </values>
   </arg>
 </fCall>
 <fCall name="__builtin_start_clock" global="true" numArgs="1">
   <arg num="0">
-    <passThroughArg param="5" caller="ConfigAudioPorts" global="true"/>
+    <passThroughArg param="7" caller="ConfigAudioPorts" global="true"/>
     <values>
     </values>
   </arg>

@@ -533,6 +533,51 @@
     </values>
   </arg>
 </fCall>
+<fCall name="__builtin_out_uint" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="0" caller="handle_audio_request" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="SendSamples4" global="false" unit="C:/Users/jiang/Desktop/I2S_Device/XMOS/testing/lib_xua/lib_xua/src/core/buffer/decouple/decouple.xc" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="0" caller="handle_audio_request" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_out_uint" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="0" caller="handle_audio_request" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_unreachable" global="true" numArgs="0">
+</fCall>
+<fCall name="__builtin_out_uint" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="0" caller="handle_audio_request" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
 <fCall name="__builtin_unreachable" global="true" numArgs="0">
 </fCall>
 <fCall name="__builtin_in_uint" global="true" numArgs="1">
@@ -713,6 +758,18 @@
     </values>
   </arg>
 </fCall>
+<fCall name="XUD_SetReady_OutPtr" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
 <fCall name="__builtin_in_uint" global="true" numArgs="1">
   <arg num="0">
     <passThroughArg param="0" caller="XUA_Buffer_Decouple" global="true"/>
@@ -876,6 +933,30 @@
   <arg num="1">
     <values>
       <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="XUD_SetReady_OutPtr" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="XUD_SetReady_OutPtr" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
     </values>
   </arg>
 </fCall>
