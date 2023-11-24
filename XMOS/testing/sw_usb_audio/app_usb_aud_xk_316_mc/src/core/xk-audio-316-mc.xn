@@ -43,14 +43,14 @@
             <Port Location="XS1_PORT_1D"  Name="PORT_MCLK_IN"/>
             <Port Location="XS1_PORT_1B"  Name="PORT_I2S_LRCLK"/>
             <Port Location="XS1_PORT_1C"  Name="PORT_I2S_BCLK"/>
-            <Port Location="XS1_PORT_1P"  Name="PORT_I2S_ADC0"/>
+            <!-- <Port Location="XS1_PORT_1P"  Name="PORT_I2S_ADC0"/>
             <port Location="XS1_PORT_1O"  Name="PORT_I2S_ADC1"/>
             <port Location="XS1_PORT_1N"  Name="PORT_I2S_ADC2"/>
-            <port Location="XS1_PORT_1M"  Name="PORT_I2S_ADC3"/>
-            <Port Location="XS1_PORT_1I"  Name="PORT_I2S_ADC4"/>
-            <Port Location="XS1_PORT_1J"  Name="PORT_I2S_ADC5"/>
-            <Port Location="XS1_PORT_1K"  Name="PORT_I2S_ADC6"/>
-            <Port Location="XS1_PORT_1L"  Name="PORT_I2S_ADC7"/>
+            <port Location="XS1_PORT_1M"  Name="PORT_I2S_ADC3"/> -->
+            <Port Location="XS1_PORT_1I"  Name="PORT_I2S_ADC0"/>
+            <Port Location="XS1_PORT_1J"  Name="PORT_I2S_ADC1"/>
+            <Port Location="XS1_PORT_1K"  Name="PORT_I2S_ADC2"/>
+            <Port Location="XS1_PORT_1L"  Name="PORT_I2S_ADC3"/>
             <!-- XS1_PORT_1F is J41 MIDI_RX -->
             <Port Location="XS1_PORT_1F"  Name="PORT_I2S_ADC8"/>
             <!-- <Port Location="XS1_PORT_1H"  Name="PORT_I2S_ADC8"/> -->
