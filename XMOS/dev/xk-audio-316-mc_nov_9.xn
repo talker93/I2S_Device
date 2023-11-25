@@ -62,7 +62,7 @@
             <Port Location="XS1_PORT_1A"  Name="PORT_SPDIF_OUT"/> <!-- A: Coax G: Optical --> 
 
             <!-- MIDI -->
-            <!-- <Port Location="XS1_PORT_1F"  Name="PORT_MIDI_IN"/> -->
+            <Port Location="XS1_PORT_1F"  Name="PORT_MIDI_IN"/>
             <Port Location="XS1_PORT_4C"  Name="PORT_MIDI_OUT"/>  
             <!-- bit[0] -->
 
