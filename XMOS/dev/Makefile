@@ -45,9 +45,9 @@ XCC_FLAGS_1AMi2o2xxxxxx = $(BUILD_FLAGS)        -DAUDIO_CLASS=1
 # Audio Class 2, Async, I2S Master, 2xInput, 2xOutput
 INCLUDE_ONLY_IN_2AMi2o2xxxxxx =
 XCC_FLAGS_2AMi2o2xxxxxx = $(BUILD_FLAGS)        -DI2S_CHANS_DAC=2 \
-                                                -DI2S_CHANS_ADC=8
-                                                # -DXUA_PCM_FORMAT=XUA_PCM_FORMAT_TDM \
-                                                # -DMAX_FREQ=96000
+                                                -DI2S_CHANS_ADC=8 \
+                                                -DXUA_PCM_FORMAT=XUA_PCM_FORMAT_TDM \
+                                                -DMAX_FREQ=96000
 
 # Audio Class 2, Async, I2S Master, 8xInput, 8xOutput
 INCLUDE_ONLY_IN_2AMi8o8xxxxxx =
