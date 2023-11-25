@@ -590,38 +590,38 @@ void AudioHwConfig(unsigned samFreq, unsigned mClk, unsigned dsdMode, unsigned s
     /* Set one DAC to I2S master */
     if(CODEC_MASTER)
     {
-        i2c_regop_res_t result = I2C_REGOP_SUCCESS;
-        unsigned regVal;
-        const int dacAddr = PCM5122_3_I2C_DEVICE_ADDR;
+        // i2c_regop_res_t result = I2C_REGOP_SUCCESS;
+        // unsigned regVal;
+        // const int dacAddr = PCM5122_3_I2C_DEVICE_ADDR;
 
-        //OSR CLK divider is set to one (as its based on the output from the DAC CLK, which is already PLL/16)
-        regVal = (mClk/(samFreq * I2S_CHANS_PER_FRAME * 32))-1;
-        result |= i2c_reg_write(dacAddr, PCM5122_DOSR, regVal);
+        // //OSR CLK divider is set to one (as its based on the output from the DAC CLK, which is already PLL/16)
+        // regVal = (mClk/(samFreq * I2S_CHANS_PER_FRAME * 32))-1;
+        // result |= i2c_reg_write(dacAddr, PCM5122_DOSR, regVal);
 
-        //# FS setting should be set based on sample rate
-        regVal = samFreq/96000;
-        result |= i2c_reg_write(dacAddr, PCM5122_I16E_FS, regVal);
+        // //# FS setting should be set based on sample rate
+        // regVal = samFreq/96000;
+        // result |= i2c_reg_write(dacAddr, PCM5122_I16E_FS, regVal);
 
-        //IDAC1  sets the number of miniDSP instructions per clock.
-        regVal = 192000/samFreq;
-        result |= i2c_reg_write(dacAddr, PCM5122_IDAC_MS, regVal);
+        // //IDAC1  sets the number of miniDSP instructions per clock.
+        // regVal = 192000/samFreq;
+        // result |= i2c_reg_write(dacAddr, PCM5122_IDAC_MS, regVal);
 
-        /* Master mode setting */
-        // BCK, LRCK output
-        result |= i2c_reg_write(dacAddr, PCM5122_BCK_LRCLK, 0x11);
+        // /* Master mode setting */
+        // // BCK, LRCK output
+        // result |= i2c_reg_write(dacAddr, PCM5122_BCK_LRCLK, 0x11);
 
-        // Master mode BCK divider setting (making 64fs)
-        regVal = (mClk/(samFreq * I2S_CHANS_PER_FRAME * XUA_I2S_N_BITS))-1;
-        result |= i2c_reg_write(dacAddr, PCM5122_DBCK, regVal);
+        // // Master mode BCK divider setting (making 64fs)
+        // regVal = (mClk/(samFreq * I2S_CHANS_PER_FRAME * XUA_I2S_N_BITS))-1;
+        // result |= i2c_reg_write(dacAddr, PCM5122_DBCK, regVal);
 
-        // Master mode LRCK divider setting (divide BCK by a further 64 (256 for TDM) to make 1fs)
-        regVal = (I2S_CHANS_PER_FRAME * XUA_I2S_N_BITS)-1;
-        result |= i2c_reg_write(dacAddr, PCM5122_DLRCK, regVal);
+        // // Master mode LRCK divider setting (divide BCK by a further 64 (256 for TDM) to make 1fs)
+        // regVal = (I2S_CHANS_PER_FRAME * XUA_I2S_N_BITS)-1;
+        // result |= i2c_reg_write(dacAddr, PCM5122_DLRCK, regVal);
 
-        // Master mode BCK, LRCK divider reset release
-        result |= i2c_reg_write(dacAddr, PCM5122_RBCK_LRCLK, 0x3f);
+        // // Master mode BCK, LRCK divider reset release
+        // result |= i2c_reg_write(dacAddr, PCM5122_RBCK_LRCLK, 0x3f);
 
-        assert(result == I2C_REGOP_SUCCESS && msg("DAC I2C write reg failed"));
+        // assert(result == I2C_REGOP_SUCCESS && msg("DAC I2C write reg failed"));
     }
     else
     {
