@@ -137,8 +137,8 @@
 #ifndef PID_AUDIO_1
 #define PID_AUDIO_1        (0x0017)
 #endif
-#define PRODUCT_STR_A2     "Biomedical Microsystems Lab ADC"
-#define PRODUCT_STR_A1     "Biomedical Microsystems Lab ADC"
+#define PRODUCT_STR_A2     "XMOS xCORE.ai MC (UAC2.0)"
+#define PRODUCT_STR_A1     "XMOS xCORE.ai MC (UAC1.0)"
 
 /* Board power source - Default is bus-powered */
 #ifndef XUA_POWERMODE
