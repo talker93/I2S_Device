@@ -381,15 +381,15 @@ void AudioHwInit()
     // Output slot
     // set slot positions for 4 channels
     // Choice A: set to positions 0/32/0/32
-    WriteAllAdcRegs(ADC6140_ASI_CH1, 0b00000000);
-    WriteAllAdcRegs(ADC6140_ASI_CH2, 0b00000000 + 32);
-    WriteAllAdcRegs(ADC6140_ASI_CH3, 0b01000000);
-    WriteAllAdcRegs(ADC6140_ASI_CH4, 0b01000000 + 32);
+    // WriteAllAdcRegs(ADC6140_ASI_CH1, 0b00000000);
+    // WriteAllAdcRegs(ADC6140_ASI_CH2, 0b00000000 + 32);
+    // WriteAllAdcRegs(ADC6140_ASI_CH3, 0b01000000);
+    // WriteAllAdcRegs(ADC6140_ASI_CH4, 0b01000000 + 32);
     // Choice B: set to positions 0/1/2/3
-    WriteAllAdcRegs(ADC6140_ASI_CH1, 0b00000000);
-    WriteAllAdcRegs(ADC6140_ASI_CH2, 0b00000000 + 1);
-    WriteAllAdcRegs(ADC6140_ASI_CH3, 0b00000000 + 2);
-    WriteAllAdcRegs(ADC6140_ASI_CH4, 0b00000000 + 3);
+    WriteAllAdcRegs(ADC6140_ASI_CH1, 0b00000000 + 4);
+    WriteAllAdcRegs(ADC6140_ASI_CH2, 0b00000000 + 5);
+    WriteAllAdcRegs(ADC6140_ASI_CH3, 0b00000000 + 6);
+    WriteAllAdcRegs(ADC6140_ASI_CH4, 0b00000000 + 7);
 
     // GPIO1 enable, comment it when using TDM
     // WriteAllAdcRegs(ADC6140_GPIO_CFG0, 0b00110000);
