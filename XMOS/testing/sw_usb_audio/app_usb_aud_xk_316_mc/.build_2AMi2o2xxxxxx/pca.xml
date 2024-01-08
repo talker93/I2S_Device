@@ -1941,12 +1941,11 @@
   <arg num="1" specialize="false">
     <values>
       <value type="intval"><intval isSigned="true" val="0"/></value>
-      <value type="intval"><intval isSigned="true" val="1"/></value>
-      <value type="intval"><intval isSigned="true" val="2"/></value>
-      <value type="intval"><intval isSigned="true" val="3"/></value>
-      <value type="intval"><intval isSigned="true" val="32"/></value>
+      <value type="intval"><intval isSigned="true" val="4"/></value>
+      <value type="intval"><intval isSigned="true" val="5"/></value>
+      <value type="intval"><intval isSigned="true" val="6"/></value>
+      <value type="intval"><intval isSigned="true" val="7"/></value>
       <value type="intval"><intval isSigned="true" val="48"/></value>
-      <value type="intval"><intval isSigned="true" val="64"/></value>
       <value type="intval"><intval isSigned="true" val="96"/></value>
       <value type="intval"><intval isSigned="true" val="129"/></value>
       <value type="intval"><intval isSigned="true" val="144"/></value>
@@ -1991,12 +1990,11 @@
   <arg num="3" specialize="false">
     <values>
       <value type="intval"><intval isSigned="true" val="0"/></value>
-      <value type="intval"><intval isSigned="true" val="1"/></value>
-      <value type="intval"><intval isSigned="true" val="2"/></value>
-      <value type="intval"><intval isSigned="true" val="3"/></value>
-      <value type="intval"><intval isSigned="true" val="32"/></value>
+      <value type="intval"><intval isSigned="true" val="4"/></value>
+      <value type="intval"><intval isSigned="true" val="5"/></value>
+      <value type="intval"><intval isSigned="true" val="6"/></value>
+      <value type="intval"><intval isSigned="true" val="7"/></value>
       <value type="intval"><intval isSigned="true" val="48"/></value>
-      <value type="intval"><intval isSigned="true" val="64"/></value>
       <value type="intval"><intval isSigned="true" val="96"/></value>
       <value type="intval"><intval isSigned="true" val="129"/></value>
       <value type="intval"><intval isSigned="true" val="144"/></value>
